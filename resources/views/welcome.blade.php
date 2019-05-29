@@ -15,6 +15,7 @@
         <div id="app">
             <div class="container">
                 <nav-bar></nav-bar>
+                <week-selection></week-selection>
                 <footer-bar></footer-bar>
             </div>
         </div>

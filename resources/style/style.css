@@ -1,12 +1,30 @@
 /* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
 .logo {
     width: 80%;
 }
 
-.icon {
-    width: 80%;
+#icon_search {
+    width: 50px;
 }
+#icon_account {
+    width: 40px;
+    margin-left : 20px;
+    margin-right : 20px;
+    margin-bottom : 2px;
+}
+#icon_cart {
+    width: 35px;
+    margin-bottom : 2px;
+}
+
 
 .menu {
     font-size: 20px;
@@ -16,4 +34,10 @@
 .image{
     width: 80%;
     margin: auto auto;
+}
+#img-logo{
+    margin-left : 25px;
+}
+.text-muted{
+    color:black !important;
 }
