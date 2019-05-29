@@ -6830,7 +6830,7 @@ var components = {
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/index.js ***!
   \***********************************************************/
-/*! exports provided: default, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, Alert, Badge, Breadcrumb, Button, ButtonGroup, ButtonToolbar, InputGroup, Card, Carousel, Layout, Collapse, Dropdown, Embed, Form, FormGroup, FormCheckbox, FormRadio, FormInput, FormTextarea, FormFile, FormSelect, Image, Jumbotron, Link, ListGroup, Media, Modal, Nav, Navbar, Pagination, PaginationNav, Popover, Progress, Spinner, Table, Tabs, Toast, Tooltip, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip */
+/*! exports provided: BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, Alert, Badge, Breadcrumb, Button, ButtonGroup, ButtonToolbar, InputGroup, Card, Carousel, Layout, Collapse, Dropdown, Embed, Form, FormGroup, FormCheckbox, FormRadio, FormInput, FormTextarea, FormFile, FormSelect, Image, Jumbotron, Link, ListGroup, Media, Modal, Nav, Navbar, Pagination, PaginationNav, Popover, Progress, Spinner, Table, Tabs, Toast, Tooltip, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17435,7 +17435,7 @@ var NAME = 'BTooltip'; // @vue/component
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/index.js ***!
   \***********************************************************/
-/*! exports provided: default, VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, BToggle, BModal, BScrollspy, BTooltip, BPopover, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover */
+/*! exports provided: VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, BToggle, BModal, BScrollspy, BTooltip, BPopover, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27388,7 +27388,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "/* @font-face {\n    font-family: 'Montserrat';\n    src: url('assets/fonts/montserrat-regular-webfont.eot');\n    src: url('assets/fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),\n        url('assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),\n        url('assets/fonts/montserrat-regular-webfont.woff') format('woff'),\n        url('assets/fonts/montserrat-regular-webfont.ttf') format('truetype'),\n        url('assets/fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n} */\n\n.wrapper {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 10px;\n    grid-auto-rows: minmax(100px, auto);\n  }\n  .icon:hover{\n      fill-opacity:0;\n  }\n\n.logo {\n    width: 80%;\n}\n\n#icon_search {\n    width: 50px;\n}\n#icon_account {\n    width: 40px;\n    margin-left : 20px;\n    margin-right : 20px;\n    margin-bottom : 2px;\n}\n#icon_cart {\n    width: 35px;\n    margin-bottom : 2px;\n}\n\n.menu {\n    font-size: 20px;\n}\n\n.image{\n    width: 80%;\n    margin: auto auto;\n}\n#img-logo{\n    margin-left : 25px;\n}\n.text-muted{\n    color:black !important;\n}\n", ""]);
+exports.push([module.i, "/* @font-face {\n    font-family: 'Montserrat';\n    src: url('assets/fonts/montserrat-regular-webfont.eot');\n    src: url('assets/fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),\n        url('assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),\n        url('assets/fonts/montserrat-regular-webfont.woff') format('woff'),\n        url('assets/fonts/montserrat-regular-webfont.ttf') format('truetype'),\n        url('assets/fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n} */\n\n.wrapper {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 10px;\n    grid-auto-rows: minmax(100px, auto);\n  }\n  .icon:hover{\n      fill-opacity:0;\n  }\n\n.logo {\n    width: 80%;\n}\n\n#icon_search {\n    width: 50px;\n}\n#icon_account {\n    width: 40px;\n    margin-left : 20px;\n    margin-right : 20px;\n    margin-bottom : 2px;\n}\n#icon_cart {\n    width: 35px;\n    margin-bottom : 2px;\n}\n\n.menu {\n    font-size: 20px;\n}\n\n.image{\n    width: 80%;\n    margin: auto auto;\n}\n#img-logo{\n    margin-left : 25px;\n}\n.text-muted{\n    color:black !important;\n}\n\n.test{\n    background-color: #a62b35;\n    color: white; \n}\n\n.btn-history{\n    margin:20px;\n    background-color:white;\n    color: #a62b35;\n    border: none; \n}\n\np.box{\n    margin: 50px;\n}\n\n.counter{\n    padding-top: 50px;\n    padding-right: 50px;\n    padding-left: 50px;\n}", ""]);
 
 // exports
 
@@ -31739,6 +31739,72 @@ var render = function() {
   return _c("div")
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HistoryBar.vue?vue&type=template&id=68f70c0a&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HistoryBar.vue?vue&type=template&id=68f70c0a& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "test text-center" }, [
+      _c("h4", [_vm._v("GAZZAR VOUS PROPOSE")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container counter" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-sm" }, [
+            _c("span", { staticClass: "Count" }, [_vm._v("200")]),
+            _c("br"),
+            _vm._v(" "),
+            _c("p", [_vm._v("RÉGIONS")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm" }, [
+            _c("span", { staticClass: "Count" }, [_vm._v("500")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("VINS")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm" }, [
+            _c("span", { staticClass: "Count" }, [_vm._v("300")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("PRODUCTEURS")])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "box text-justify" }, [
+        _vm._v(
+          "Depuis 1973, Gazzar travaille dans l’exigence renouvelée du détail qui fait l’art d’un grand vin. Parmi l’étendue considérable de l’offre, notre tâche est de sélectionner pour vous des vins de légende, mais également de rechercher des vins hors des sentiers battus. Nous favorisons des producteurs artisanaux et respectueux de la nature. Nous partageons avec eux cette passion des grands vins. Nous prenons le soin de déguster tous les vins que nous vous proposons, garantissant ainsi l’excellence et un conseil personnel."
+        )
+      ]),
+      _vm._v(" "),
+      _c("button", { staticClass: "btn btn-primary btn-history" }, [
+        _vm._v("CONSULTER L'HISTOIRE DE GAZZAR")
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -44085,8 +44151,25 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_M
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('nav-bar', __webpack_require__(/*! ./components/NavBar.vue */ "./resources/js/components/NavBar.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('week-selection', __webpack_require__(/*! ./components/WeekSelection.vue */ "./resources/js/components/WeekSelection.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('footer-bar', __webpack_require__(/*! ./components/Footer.vue */ "./resources/js/components/Footer.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('history-bar', __webpack_require__(/*! ./components/HistoryBar.vue */ "./resources/js/components/HistoryBar.vue")["default"]);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app'
+});
+$(document).ready(function () {
+  $('.Count').each(function () {
+    var $this = $(this);
+    jQuery({
+      Counter: 0
+    }).animate({
+      Counter: $this.text()
+    }, {
+      duration: 1000,
+      easing: 'swing',
+      step: function step(i) {
+        $this.text(Math.ceil(i));
+      }
+    });
+  });
 });
 
 /***/ }),
@@ -44139,6 +44222,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/HistoryBar.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/HistoryBar.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _HistoryBar_vue_vue_type_template_id_68f70c0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HistoryBar.vue?vue&type=template&id=68f70c0a& */ "./resources/js/components/HistoryBar.vue?vue&type=template&id=68f70c0a&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _HistoryBar_vue_vue_type_template_id_68f70c0a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _HistoryBar_vue_vue_type_template_id_68f70c0a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/HistoryBar.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/HistoryBar.vue?vue&type=template&id=68f70c0a&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/HistoryBar.vue?vue&type=template&id=68f70c0a& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HistoryBar_vue_vue_type_template_id_68f70c0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./HistoryBar.vue?vue&type=template&id=68f70c0a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HistoryBar.vue?vue&type=template&id=68f70c0a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HistoryBar_vue_vue_type_template_id_68f70c0a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HistoryBar_vue_vue_type_template_id_68f70c0a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -44298,8 +44434,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/loicpostec/Desktop/2e/Semestre2/projArt/projet-articulation/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/loicpostec/Desktop/2e/Semestre2/projArt/projet-articulation/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/audris/Desktop/Teamothé/projet-articulation/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/audris/Desktop/Teamothé/projet-articulation/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

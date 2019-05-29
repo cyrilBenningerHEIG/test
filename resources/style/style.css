@@ -52,3 +52,25 @@
 .text-muted{
     color:black !important;
 }
+
+.test{
+    background-color: #a62b35;
+    color: white; 
+}
+
+.btn-history{
+    margin:20px;
+    background-color:white;
+    color: #a62b35;
+    border: none; 
+}
+
+p.box{
+    margin: 50px;
+}
+
+.counter{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}

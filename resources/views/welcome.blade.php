@@ -17,6 +17,7 @@
                 <nav-bar></nav-bar>
                 <week-selection></week-selection>
                 <footer-bar></footer-bar>
+                <history-bar></history-bar>
             </div>
         </div>
     <script src="js/app.js"></script>
