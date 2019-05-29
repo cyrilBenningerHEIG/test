@@ -52,7 +52,10 @@
 .text-muted{
     color:black !important;
 }
+<<<<<<< HEAD
 <<<<<<< .merge_file_jsqHi5
+=======
+>>>>>>> a5e6155401d4a5e66c8653fa15ce5c09aa9d5e13
 .card{
     border : none;
 }
@@ -85,6 +88,7 @@ a{
 .cls-1 {
     fill: #CCBE9F;
 }
+<<<<<<< HEAD
 =======
 
 .test{
@@ -109,3 +113,5 @@ p.box{
     padding-left: 50px;
 }
 >>>>>>> .merge_file_2iNG0G
+=======
+>>>>>>> a5e6155401d4a5e66c8653fa15ce5c09aa9d5e13
