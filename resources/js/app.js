@@ -19,6 +19,8 @@ Vue.use(BootstrapVue);
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
 Vue.component('week-selection', require('./components/WeekSelection.vue').default);
 Vue.component('footer-bar', require('./components/Footer.vue').default);
+Vue.component('week-selection-card', require('./components/WeekSelectionCard.vue').default);
+Vue.component('week-selection-producer', require('./components/WeekSelectionProducer.vue').default);
 const app = new Vue({
     el: '#app',
 });
