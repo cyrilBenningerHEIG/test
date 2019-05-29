@@ -13,14 +13,37 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import '../style/style.css';
 
 
+
+
 Vue.use(BootstrapVue);
 
 
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
 Vue.component('week-selection', require('./components/WeekSelection.vue').default);
 Vue.component('footer-bar', require('./components/Footer.vue').default);
+<<<<<<< .merge_file_Ph6ikU
 Vue.component('week-selection-card', require('./components/WeekSelectionCard.vue').default);
 Vue.component('week-selection-producer', require('./components/WeekSelectionProducer.vue').default);
 const app = new Vue({
     el: '#app',
 });
+=======
+Vue.component('history-bar', require('./components/HistoryBar.vue').default);
+const app = new Vue({
+    el: '#app',
+});
+
+$(document).ready(function () {
+    $('.Count').each(function () {
+        var $this = $(this);
+        jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+          duration: 1000,
+          easing: 'swing',
+          step: function (i) {
+            $this.text(Math.ceil(i));
+          }
+        });
+    });
+});
+
+>>>>>>> .merge_file_ZtCZFA

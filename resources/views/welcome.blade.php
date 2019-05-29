@@ -20,6 +20,7 @@
                 <week-selection-card></week-selection-card>
                 <week-selection-producer></week-selection-producer>
                 <footer-bar></footer-bar>
+                <history-bar></history-bar>
             </div>
         </div>
     <script src="js/app.js"></script>
