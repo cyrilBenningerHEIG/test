@@ -6830,7 +6830,7 @@ var components = {
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/index.js ***!
   \***********************************************************/
-/*! exports provided: BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, Alert, Badge, Breadcrumb, Button, ButtonGroup, ButtonToolbar, InputGroup, Card, Carousel, Layout, Collapse, Dropdown, Embed, Form, FormGroup, FormCheckbox, FormRadio, FormInput, FormTextarea, FormFile, FormSelect, Image, Jumbotron, Link, ListGroup, Media, Modal, Nav, Navbar, Pagination, PaginationNav, Popover, Progress, Spinner, Table, Tabs, Toast, Tooltip, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, default */
+/*! exports provided: default, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, Alert, Badge, Breadcrumb, Button, ButtonGroup, ButtonToolbar, InputGroup, Card, Carousel, Layout, Collapse, Dropdown, Embed, Form, FormGroup, FormCheckbox, FormRadio, FormInput, FormTextarea, FormFile, FormSelect, Image, Jumbotron, Link, ListGroup, Media, Modal, Nav, Navbar, Pagination, PaginationNav, Popover, Progress, Spinner, Table, Tabs, Toast, Tooltip, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17435,7 +17435,7 @@ var NAME = 'BTooltip'; // @vue/component
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/index.js ***!
   \***********************************************************/
-/*! exports provided: VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, BToggle, BModal, BScrollspy, BTooltip, BPopover, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover, default */
+/*! exports provided: default, VBTogglePlugin, VBModalPlugin, VBScrollspyPlugin, VBTooltipPlugin, VBPopoverPlugin, BToggle, BModal, BScrollspy, BTooltip, BPopover, VBToggle, VBModal, VBScrollspy, VBTooltip, VBPopover */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27388,7 +27388,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */\n\n.logo {\n    width: 80%;\n}\n\n.icon {\n    width: 80%;\n}\n\n.menu {\n    font-size: 20px;\n\n}\n\n.image{\n    width: 80%;\n    margin: auto auto;\n}\n", ""]);
+exports.push([module.i, "/* @font-face {\n    font-family: 'Montserrat';\n    src: url('assets/fonts/montserrat-regular-webfont.eot');\n    src: url('assets/fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),\n        url('assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),\n        url('assets/fonts/montserrat-regular-webfont.woff') format('woff'),\n        url('assets/fonts/montserrat-regular-webfont.ttf') format('truetype'),\n        url('assets/fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n} */\n\n.wrapper {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 10px;\n    grid-auto-rows: minmax(100px, auto);\n  }\n  .icon:hover{\n      fill-opacity:0;\n  }\n\n.logo {\n    width: 80%;\n}\n\n#icon_search {\n    width: 50px;\n}\n#icon_account {\n    width: 40px;\n    margin-left : 20px;\n    margin-right : 20px;\n    margin-bottom : 2px;\n}\n#icon_cart {\n    width: 35px;\n    margin-bottom : 2px;\n}\n\n.menu {\n    font-size: 20px;\n}\n\n.image{\n    width: 80%;\n    margin: auto auto;\n}\n#img-logo{\n    margin-left : 25px;\n}\n.text-muted{\n    color:black !important;\n}\n", ""]);
 
 // exports
 
@@ -31760,7 +31760,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("body", [
     _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "homepageImg" }, [
@@ -31789,7 +31789,7 @@ var staticRenderFns = [
           [
             _c("div", { staticClass: "col-4 pt-1" }),
             _vm._v(" "),
-            _c("div", { staticClass: "col-4 text-center" }, [
+            _c("div", { staticClass: "col-4" }, [
               _c(
                 "a",
                 {
@@ -31800,6 +31800,7 @@ var staticRenderFns = [
                   _c("img", {
                     staticClass: "logo",
                     attrs: {
+                      id: "img-logo",
                       src: "http://localhost:8888/public/images/logo.svg"
                     }
                   })
@@ -31814,29 +31815,50 @@ var staticRenderFns = [
                   "col-4 d-flex justify-content-end align-items-center"
               },
               [
-                _c("a", { staticClass: "icon", attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "http://localhost:8888/public/images/recherche.svg"
-                    }
-                  })
-                ]),
+                _c(
+                  "a",
+                  {
+                    staticClass: "icon",
+                    attrs: { id: "icon_search", href: "#" }
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "http://localhost:8888/public/images/recherche.svg"
+                      }
+                    })
+                  ]
+                ),
                 _vm._v(" "),
-                _c("a", { staticClass: "icon", attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "http://localhost:8888/public/images/compte.svg"
-                    }
-                  })
-                ]),
+                _c(
+                  "a",
+                  {
+                    staticClass: "icon",
+                    attrs: { id: "icon_account", href: "#" }
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "http://localhost:8888/public/images/compte.svg"
+                      }
+                    })
+                  ]
+                ),
                 _vm._v(" "),
-                _c("a", { staticClass: "icon", attrs: { href: "#" } }, [
-                  _c("img", {
-                    attrs: {
-                      src: "http://localhost:8888/public/images/panier.svg"
-                    }
-                  })
-                ])
+                _c(
+                  "a",
+                  {
+                    staticClass: "icon",
+                    attrs: { id: "icon_cart", href: "#" }
+                  },
+                  [
+                    _c("img", {
+                      attrs: {
+                        src: "http://localhost:8888/public/images/panier.svg"
+                      }
+                    })
+                  ]
+                )
               ]
             )
           ]
@@ -31853,7 +31875,10 @@ var staticRenderFns = [
         _c("nav", { staticClass: "nav d-flex justify-content-between" }, [
           _c(
             "a",
-            { staticClass: "p-2 text-muted menu", attrs: { href: "#" } },
+            {
+              staticClass: "p-2 text-muted menu",
+              attrs: { id: "products-link", href: "#" }
+            },
             [_vm._v("PRODUITS")]
           ),
           _vm._v(" "),
@@ -31861,7 +31886,10 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "a",
-            { staticClass: "p-2 text-muted menu", attrs: { href: "#" } },
+            {
+              staticClass: "p-2 text-muted menu",
+              attrs: { id: "primeurs-link", href: "#" }
+            },
             [_vm._v("PRIMEURS")]
           ),
           _vm._v(" "),
@@ -31869,7 +31897,10 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "a",
-            { staticClass: "p-2 text-muted menu", attrs: { href: "#" } },
+            {
+              staticClass: "p-2 text-muted menu",
+              attrs: { id: "news-link", href: "#" }
+            },
             [_vm._v("NOUVEAUTÉS")]
           ),
           _vm._v(" "),
@@ -31877,11 +31908,12 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "a",
-            { staticClass: "p-2 text-muted menu", attrs: { href: "#" } },
+            {
+              staticClass: "p-2 text-muted menu",
+              attrs: { id: "promo-link", href: "#" }
+            },
             [_vm._v("PROMOTIONS")]
-          ),
-          _vm._v(" "),
-          _c("p", { staticClass: "p-2 text-muted" }, [_vm._v("|")])
+          )
         ])
       ])
     ])
@@ -44266,8 +44298,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/audris/Desktop/Teamothé/projet-articulation/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/audris/Desktop/Teamothé/projet-articulation/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/loicpostec/Desktop/2e/Semestre2/projArt/projet-articulation/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/loicpostec/Desktop/2e/Semestre2/projArt/projet-articulation/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -1,10 +1,23 @@
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
+/* @font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/montserrat-regular-webfont.eot');
+    src: url('assets/fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+        url('assets/fonts/montserrat-regular-webfont.woff') format('woff'),
+        url('assets/fonts/montserrat-regular-webfont.ttf') format('truetype'),
+        url('assets/fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
 
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+  }
+  .icon:hover{
+      fill-opacity:0;
   }
 
 .logo {
@@ -25,10 +38,8 @@
     margin-bottom : 2px;
 }
 
-
 .menu {
     font-size: 20px;
-
 }
 
 .image{
