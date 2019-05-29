@@ -16,9 +16,6 @@
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
   }
-  .icon:hover{
-      fill-opacity:0;
-  }
 
 .logo {
     width: 80%;
