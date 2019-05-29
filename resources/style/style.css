@@ -52,3 +52,35 @@
 .text-muted{
     color:black !important;
 }
+.card{
+    border : none;
+}
+.card-group{
+    padding-top : 50px;
+}
+.card-img-top{
+    height:350px;
+}
+.btn-danger{
+    background-color: #953640 !important;
+    border-color: #953640 !important;
+    color: aliceblue !important;
+}
+
+.page-footer {
+    background-color: #2B2B2B;
+    color: #CCBE9F;
+    font-family: 'Roboto',sans-serif;
+}
+
+.h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    color: #CCBE9F !important;
+}
+
+.cls-1 {
+    fill: #CCBE9F;
+}
