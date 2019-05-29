@@ -16,12 +16,8 @@ Vue.use(BootstrapVue);
 
 
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
+Vue.component('week-selection', require('./components/WeekSelection.vue').default);
 Vue.component('footer-bar', require('./components/Footer.vue').default);
-
-
 const app = new Vue({
     el: '#app',
-    logo: {
-        url: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
-      },
 });
