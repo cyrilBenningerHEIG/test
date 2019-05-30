@@ -21,4 +21,8 @@ class clnt extends Model
     public function comms() {
         return $this->hasMany('App\comm');
     }
+
+    public function wlist() {
+        return $this->hasOne('App\wlist');
+    }
 }

@@ -22,8 +22,10 @@ class cmd extends Model
         return $this->belongsToMany('App\promoc');
     }
 
-    public function detcmds() {
-        return $this->hasMany('App\detcmd');
+    public function vins() {
+        return $this->belongsToMany('App\vin');
     }
+
+
     
 }

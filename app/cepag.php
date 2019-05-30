@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class cepag extends Model
 {
-    public function comps() {
-        return $this->hasMany('App\comp');
+    public function vins() {
+        return $this->belongsToMany('App\vins');
     }
 }

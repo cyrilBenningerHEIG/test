@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class vin extends Model
 {
+<<<<<<< HEAD
     public function appel() {
         return $this->belongsTo('App\appel');
     }
@@ -52,4 +53,7 @@ class vin extends Model
 
 
     
+=======
+    //
+>>>>>>> master
 }
