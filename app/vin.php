@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class vin extends Model
 {
-<<<<<<< HEAD
     public function appel() {
         return $this->belongsTo('App\appel');
     }
@@ -31,8 +30,8 @@ class vin extends Model
         return $this->belongsTo('App\produ');
     }
 
-    public function comps() {
-        return $this->hasMany('App\comp');
+    public function cepags() {
+        return $this->belongsToMany('App\cepag');
     }
 
     public function types() {
@@ -47,13 +46,11 @@ class vin extends Model
         return $this->hasMany('App\comm');
     }
 
-    public function detcmds() {
-        return $this->hasMany('App\detcmd');
+    public function cmds() {
+        return $this->belongsToMany('App\cmd');
     }
 
 
+
     
-=======
-    //
->>>>>>> master
 }
