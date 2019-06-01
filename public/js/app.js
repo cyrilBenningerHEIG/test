@@ -24583,7 +24583,7 @@ var hasIntersectionObserverSupport = isBrowser && 'IntersectionObserver' in wind
 
 var getEnv = function getEnv(key) {
   var fallback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-  var env = typeof process !== 'undefined' && process ? Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}) || false : {};
+  var env = typeof process !== 'undefined' && process ? Object({"MIX_PUSHER_APP_CLUSTER":"mt1","MIX_PUSHER_APP_KEY":"","NODE_ENV":"development"}) || false : {};
 
   if (!key) {
     /* istanbul ignore next */
@@ -33501,7 +33501,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "/* @font-face {\n    font-family: 'Montserrat';\n    src: url('assets/fonts/montserrat-regular-webfont.eot');\n    src: url('assets/fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),\n        url('assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),\n        url('assets/fonts/montserrat-regular-webfont.woff') format('woff'),\n        url('assets/fonts/montserrat-regular-webfont.ttf') format('truetype'),\n        url('assets/fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');\n    font-weight: normal;\n    font-style: normal;\n} */\n\n.logo {\n    width: 80%;\n}\n\n.icon {\n    width: 80%;\n}\n\n.menu {\n    font-size: 20px;\n}\n\n.image{\n    width: 80%;\n    margin: auto auto;\n}\n", ""]);
+exports.push([module.i, "/* @font-face {\r\n    font-family: 'Montserrat';\r\n    src: url('assets/fonts/montserrat-regular-webfont.eot');\r\n    src: url('assets/fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),\r\n        url('assets/fonts/montserrat-regular-webfont.woff2') format('woff2'),\r\n        url('assets/fonts/montserrat-regular-webfont.woff') format('woff'),\r\n        url('assets/fonts/montserrat-regular-webfont.ttf') format('truetype'),\r\n        url('assets/fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n} */\r\n\r\n.logo {\r\n    width: 80%;\r\n}\r\n\r\n.icon {\r\n    width: 80%;\r\n}\r\n\r\n.menu {\r\n    font-size: 20px;\r\n}\r\n\r\n.image{\r\n    width: 80%;\r\n    margin: auto auto;\r\n}\r\n", ""]);
 
 // exports
 
@@ -65656,9 +65656,7 @@ var staticRenderFns = [
                     [
                       _c("img", {
                         staticClass: "logo",
-                        attrs: {
-                          src: "http://localhost:8888/public/images/logo.svg"
-                        }
+                        attrs: { src: "images/logo.svg" }
                       })
                     ]
                   )
@@ -65672,28 +65670,15 @@ var staticRenderFns = [
                   },
                   [
                     _c("a", { staticClass: "icon", attrs: { href: "#" } }, [
-                      _c("img", {
-                        attrs: {
-                          src:
-                            "http://localhost:8888/public/images/recherche.svg"
-                        }
-                      })
+                      _c("img", { attrs: { src: "images/recherche.svg" } })
                     ]),
                     _vm._v(" "),
                     _c("a", { staticClass: "icon", attrs: { href: "#" } }, [
-                      _c("img", {
-                        attrs: {
-                          src: "http://localhost:8888/public/images/compte.svg"
-                        }
-                      })
+                      _c("img", { attrs: { src: "images/compte.svg" } })
                     ]),
                     _vm._v(" "),
                     _c("a", { staticClass: "icon", attrs: { href: "#" } }, [
-                      _c("img", {
-                        attrs: {
-                          src: "http://localhost:8888/public/images/panier.svg"
-                        }
-                      })
+                      _c("img", { attrs: { src: "images/panier.svg" } })
                     ])
                   ]
                 )
@@ -65705,7 +65690,7 @@ var staticRenderFns = [
         _c("div", [
           _c("img", {
             staticClass: "img-fluid",
-            attrs: { src: "http://localhost:8888/public/images/home.jpg" }
+            attrs: { src: "images/home.jpg" }
           })
         ]),
         _vm._v(" "),
@@ -77932,6 +77917,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
     url: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
   }
 });
+window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+window.JQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 /***/ }),
 
@@ -78147,8 +78134,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/loicpostec/Desktop/2e/Semestre2/projArt/projet-articulation/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/loicpostec/Desktop/2e/Semestre2/projArt/projet-articulation/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\wamp64\www\projet-articulation\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\wamp64\www\projet-articulation\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

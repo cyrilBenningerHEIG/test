@@ -25,3 +25,9 @@ const app = new Vue({
         url: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
       },
 });
+
+
+
+window.$ = require('jquery')
+window.JQuery = require('jquery')
+

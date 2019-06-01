@@ -6,19 +6,19 @@
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1"></div>
                 <div class="col-4 text-center">
-                    <a class="blog-header-logo text-dark" href="#"><img class="logo" src="http://localhost:8888/public/images/logo.svg" /></a>
+                    <a class="blog-header-logo text-dark" href="#"><img class="logo" src="images/logo.svg" /></a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <a class="icon" href="#"><img src="http://localhost:8888/public/images/recherche.svg" /></a>
-                    <a class="icon" href="#"><img src="http://localhost:8888/public/images/compte.svg" /></a>
-                    <a class="icon" href="#"><img src="http://localhost:8888/public/images/panier.svg" /></a>
+                    <a class="icon" href="#"><img src="images/recherche.svg" /></a>
+                    <a class="icon" href="#"><img src="images/compte.svg" /></a>
+                    <a class="icon" href="#"><img src="images/panier.svg" /></a>
                 </div>
             </div>
         </header>
     </div>
 
         <div>
-            <img class="img-fluid" src="http://localhost:8888/public/images/home.jpg" />
+            <img class="img-fluid" src="images/home.jpg" />
         </div>
 
 <div class="container"> 
