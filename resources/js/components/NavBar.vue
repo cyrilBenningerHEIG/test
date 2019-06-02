@@ -9,9 +9,9 @@
                     <a class="blog-header-logo text-dark" href="#"><img class="logo" src="images/logo.svg" /></a>
                 </div>
                 <div class="col-4 d-flex justify-content-end align-items-center">
-                    <a class="icon" href="#"><img src="images/recherche.svg" /></a>
-                    <a class="icon" href="#"><img src="images/compte.svg" /></a>
-                    <a class="icon" href="#"><img src="images/panier.svg" /></a>
+                    <a class="icon" href="#"><img src="images/recherche.svg" width="100px" height="100px"/></a>
+                    <a class="icon" href="#"><img src="images/compte.svg" width="80px" height="80px" /></a>
+                    <a class="icon" href="#"><img src="images/panier.svg" width="80px" height="80px" /></a>
                 </div>
             </div>
         </header>
