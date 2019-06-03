@@ -293,4 +293,6 @@ margin-bottom: 25px;
 }
 .card-custom{
     display : inline-flex;
+    padding-left : 20px;
+    padding-right : 20px;
 }
