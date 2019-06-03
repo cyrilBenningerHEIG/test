@@ -1,7 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <h2>Sélection de la semaine</h2>
-   <div class="card-group">
-  </div>
     </div>
 </template>

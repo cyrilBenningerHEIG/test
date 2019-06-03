@@ -1,10 +1,11 @@
 <template>
 <!-- v-for="weekselectionproduct in weekselectionproducts" v-bind:key="weekselectionproduct_id" -->
-      <div class="card" >
+  
+      <div class="card card-custom mx-2 mb-3" >
     <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="card-img-top" alt="vin1">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="card-body" id="weekproduct">
+      <h5 class="card-title">Nom du vin</h5>
+      <p class="card-text">Spécificités</p>
     </div>
   </div>
 </template>
@@ -32,3 +33,4 @@ export default {
     //     }
 }
 </script>
+

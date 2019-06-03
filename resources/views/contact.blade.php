@@ -15,15 +15,12 @@
         <div id="app">
             <div class="container">
                 <nav-bar></nav-bar>
-                <week-selection>
-                </week-selection>
-                <week-selection-card></week-selection-card>
-                <week-selection-producer></week-selection-producer>
+                <contact-form></contact-form>
+
                 <footer-bar></footer-bar>
-                <history-bar></history-bar>
+
             </div>
         </div>
-    <script src="js/app.js"></script>
+            <script src="js/app.js"></script>
     </body>
 </html>
-
