@@ -22,7 +22,7 @@ class CreateClntsTable extends Migration
             $table->string('telephone', 100)->nullable($value = true);
             $table->boolean('sexe');
             $table->string('motdepasse', 100);
-            $table->boolean('estAdmin');
+            $table->boolean('estAdmin')->default(0)->change();
 
             $table->timestamps();
         });

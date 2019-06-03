@@ -15,10 +15,12 @@
         <div id="app">
             <div class="container">
                 <nav-bar></nav-bar>
+                <contact-form></contact-form>
+
                 <footer-bar></footer-bar>
+
             </div>
         </div>
-    <script src="js/app.js"></script>
+            <script src="js/app.js"></script>
     </body>
 </html>
-
