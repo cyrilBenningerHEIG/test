@@ -16,7 +16,7 @@
             <div class="container">
                 <nav-bar></nav-bar>
                 <product-filter></product-filter>
-                
+                <carte-produit></carte-produit>
                 <footer-bar></footer-bar>
 
             </div>

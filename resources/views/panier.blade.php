@@ -15,7 +15,7 @@
         <div id="app">
             <div class="container">
                 <nav-bar></nav-bar>
-
+                <panier-produit></panier-produit>
                 <footer-bar></footer-bar>
 
             </div>

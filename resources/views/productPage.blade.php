@@ -16,7 +16,6 @@
             <div class="container">
             <nav-product-bar></nav-product-bar>
             <product-page></product-page>
-            <carte-produit></carte-produit>
             <footer-bar></footer-bar>
             </div>
         </div>

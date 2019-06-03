@@ -15,7 +15,7 @@
         <div id="app">
             <div class="container">
                 <nav-bar></nav-bar>
-
+                <cgv-texte></cgv-texte>
                 <footer-bar></footer-bar>
 
             </div>

@@ -255,3 +255,16 @@ a.afooter {
 .article-font {
     font-size: 12px;
 }
+#cart-produit-img{
+    width : 68px;
+    height : 150px;
+}
+.btn-panier-2{
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+
+}
+.action-btn{
+margin-bottom: 25px;
+}

@@ -22,7 +22,7 @@ window.JQuery = require('jquery')
 Vue.use(BootstrapVue);
 
 
-Vue.component('carte-produit',require('./components/CarteProduit.vue').default);
+
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
 Vue.component('week-selection', require('./components/SelectionSemaine.vue').default);
 Vue.component('footer-bar', require('./components/Footer.vue').default);
@@ -37,6 +37,13 @@ Vue.component('contact-form', require('./components/ContactForm.vue').default);
 //Page produits
 Vue.component('nav-product-bar', require('./components/NavProductBar.vue').default);
 Vue.component('product-page', require('./components/ProductPage.vue').default);
+Vue.component('carte-produit',require('./components/CarteProduit.vue').default);
+
+//CGV 
+Vue.component('cgv-texte',require('./components/CGV.vue').default);
+
+//Panier 
+Vue.component('panier-produit',require('./components/Panier.vue').default);
 
 const app = new Vue({
     el: '#app',
