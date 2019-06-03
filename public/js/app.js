@@ -46828,13 +46828,15 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card card-custom mx-2 mb-3" }, [
-      _c("img", {
-        staticClass: "card-img-top",
-        attrs: {
-          src: "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
-          alt: "vin1"
-        }
-      }),
+      _c("a", { attrs: { href: "pageProduit" } }, [
+        _c("img", {
+          staticClass: "card-img-top",
+          attrs: {
+            src: "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
+            alt: "vin1"
+          }
+        })
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body", attrs: { id: "weekproduct" } })
     ])
@@ -46869,13 +46871,15 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card card-custom mx-2 mb-3" }, [
-      _c("img", {
-        staticClass: "card-img-top",
-        attrs: {
-          src: "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
-          alt: "vin1"
-        }
-      }),
+      _c("a", { attrs: { href: "pageProduit" } }, [
+        _c("img", {
+          staticClass: "card-img-top",
+          attrs: {
+            src: "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
+            alt: "vin1"
+          }
+        })
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body", attrs: { id: "weekproduct" } })
     ])
