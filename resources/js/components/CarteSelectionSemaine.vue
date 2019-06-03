@@ -9,3 +9,30 @@
   </div>
   <!-- </div> -->
 </template>
+<script>
+export default {
+  props: ['vins'],
+
+    data(){
+        return{
+            weekselection : [],
+            weekselectionproduct:{
+                no : '',
+                nom : '',
+                description : '',
+            },
+            weekselectionproduct_id:'',
+
+        }
+     },
+    //     created() {
+    //         this.fetchWeekSelectionProduct();
+    //     },
+    //     methods() {
+    //         fetchWeekSelectionProduct(){
+    //             fetch('x');
+    //         }
+    //     }
+}
+</script>
+

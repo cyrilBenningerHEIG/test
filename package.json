@@ -33,6 +33,7 @@
         "vform": "^1.0.0",
         "vue-countup": "^0.1.0",
         "vue-countup-v2": "^3.0.1",
+        "vue-router": "^3.0.6",
         "waypoints": "^4.0.1"
     }
 }

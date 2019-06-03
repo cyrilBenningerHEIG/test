@@ -16,7 +16,7 @@
             <div class="container">
                 <nav-bar></nav-bar>
                 <week-selection></week-selection>
-                <week-selection-card></week-selection-card>
+                <week-selection-card :vins='{{ $vins }}'></week-selection-card>
                 <week-selection-producer></week-selection-producer>
                 <history-bar></history-bar>
                 <footer-bar></footer-bar>
