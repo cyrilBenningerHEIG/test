@@ -15,9 +15,9 @@
         </div>
         <div class="col mt-5">
           <div>
-            <h4>Château Cambon la Pelouse - 2015</h4>
+            <h3>Château Cambon la Pelouse - 2015</h3>
             <span> </span>
-            <p class="mt-3 mb-3 h5">CHF <b>17.40  </b><i class="price-ht-font">(<span>13</span> CHF hors TVA)</i></p>
+            <h5 class="mt-3 mb-3 price-font">CHF <b>17.40  </b><i class="price-ht-font">(<span>13</span> CHF hors TVA)</i></h5>
        
             <span> </span>
             <span> </span>
@@ -25,27 +25,27 @@
           </div>
               <br>
           
-          <div class="mt-2 mb-2">
-            <span>
-              <label>TAILL :</label> 
+          <div class="mt-4 mb-4">
+            <label>TAILL :</label> 
+            <div>
               <a href="#" class="btn btn-outline-secondary btn-sm disabled" role="button" aria-disabled="true">37.5 cl</a>
               <a href="#" class="btn btn-outline-secondary btn-sm active" role="button" aria-disabled="true">50 cl</a>
               <a href="#" class="btn btn-outline-secondary btn-sm disabled" role="button" aria-disabled="true">75 cl</a>
-            </span>
+            </div>
           </div>
 
-          <div class="mt-2 mb-2">
-            <span>
-              <label>VARIANTES :</label> 
+          <div class="mt-4 mb-4">
+            <label>VARIANTES :</label> 
+            <div>
               <a href="#" class="btn btn-outline-secondary btn-sm disabled" role="button" aria-disabled="true">2012</a>
               <a href="#" class="btn btn-outline-secondary btn-sm active" role="button" aria-disabled="true">2015</a>
               <a href="#" class="btn btn-outline-secondary btn-sm disabled" role="button" aria-disabled="true">2017</a>
-            </span>
+            </div>
           </div>
 
-          <div class="mt-2 mb-2">
-                <div class="input-group">
-                  <label class="mr-4 my-auto">QUANTITÉS : </label>
+          <div class="mt-4 mb-4">
+            <label class="mr-4 my-auto">QUANTITÉS : </label>
+                <div class="input-group" id="btn-quantity">
                       <span class="input-group-btn">
                         <button type="button" class="quantity-left-minus btn btn-outline-secondary btn-sm" data-type="minus" data-field="">
                           <span class="glyphicon glyphicon-minus">-</span>
@@ -59,7 +59,7 @@
                       </span>                  
                 </div>
           </div>
-          <button type="button" class="btn btn-outline-danger btn-sm ml-4 mr-4">Ajouter au panier</button>
+          <button type="button" class="btn btn-outline-danger btn-xl btn-basket"><span class="icon"></span><span>Ajouter au panier</span></button>
         </div>
       </div>
     </div>

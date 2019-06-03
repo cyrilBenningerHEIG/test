@@ -14,7 +14,7 @@
     <body>
         <div id="app">
             <div class="container">
-                <nav-bar></nav-bar>
+                <nav-bar-nouveaute></nav-bar-nouveaute>
                 <product-filter></product-filter>
                 <carte-produit></carte-produit>
                 <footer-bar></footer-bar>
