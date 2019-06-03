@@ -33,8 +33,8 @@ class CreateVinsTable extends Migration
             $table->string('apogee');
             $table->integer('millesime');
             $table->string('photoUrl')->nullable($value = true);
-            $table->boolean('estBio');
-            $table->boolean('estVds');
+            $table->boolean('estBio')->default(0)->change();
+            $table->boolean('estVds')->default(0)->change();
             $table->string('cotation')->nullable($value = true);
             $table->string('classement')->nullable($value = true);
             $table->integer('stock');
