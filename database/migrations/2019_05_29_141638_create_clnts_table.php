@@ -21,8 +21,10 @@ class CreateClntsTable extends Migration
             $table->date('dateNaissance');
             $table->string('telephone', 100)->nullable($value = true);
             $table->boolean('sexe');
-            $table->string('motdepasse', 100);
-            $table->boolean('estAdmin')->default(0)->change();
+            $table->string('password', 100);
+
+            $table->boolean('estAdmin')->default(0);
+
 
             $table->timestamps();
         });
