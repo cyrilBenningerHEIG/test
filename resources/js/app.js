@@ -30,6 +30,8 @@ Vue.component('week-selection-card', require('./components/CarteSelectionSemaine
 Vue.component('week-selection-producer', require('./components/ProducteurSelectionSemaine.vue').default);
 Vue.component('history-bar', require('./components/HistoryBar.vue').default);
 
+Vue.component('nav-bar-nouveaute', require('./components/NavBarNouveaute.vue').default);
+
 //Filtre produits et formulaire de contact 
 Vue.component('product-filter', require('./components/ProductFilter.vue').default);
 Vue.component('contact-form', require('./components/ContactForm.vue').default);
@@ -37,13 +39,14 @@ Vue.component('contact-form', require('./components/ContactForm.vue').default);
 //Page produits
 Vue.component('nav-product-bar', require('./components/NavProductBar.vue').default);
 Vue.component('product-page', require('./components/ProductPage.vue').default);
-Vue.component('carte-produit',require('./components/CarteProduit.vue').default);
+Vue.component('carte-produit', require('./components/CarteProduit.vue').default);
+Vue.component('selection-card', require('./components/CarteSelection.vue').default);
 
 //CGV 
-Vue.component('cgv-texte',require('./components/CGV.vue').default);
+Vue.component('cgv-texte', require('./components/CGV.vue').default);
 
 //Panier 
-Vue.component('panier-produit',require('./components/Panier.vue').default);
+Vue.component('panier-produit', require('./components/Panier.vue').default);
 
 const app = new Vue({
     el: '#app',
