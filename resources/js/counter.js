@@ -15,7 +15,6 @@ $(document).ready(function() {
 
         $('#quantity').val(quantity + 1);
 
-
         // Increment
 
     });
