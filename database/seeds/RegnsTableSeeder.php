@@ -24,6 +24,22 @@ class RegnsTableSeeder extends Seeder
                 'pays_id' => '2',
                 'nom' => 'Bourgogne'
             ],
+            [
+                'pays_id' => '2',
+                'nom' => 'Rhône'
+            ],
+            [
+                'pays_id' => '3',
+                'nom' => 'Campania'
+            ],
+            [
+                'pays_id' => '4',
+                'nom' => 'Ribera del Duero'
+            ],
+            [
+                'pays_id' => '1',
+                'nom' => 'Vaud'
+            ],
         ]);
     }
 }

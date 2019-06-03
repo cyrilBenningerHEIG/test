@@ -51,6 +51,35 @@ class ProdusTableSeeder extends Seeder
                 Sa superficie s\'étend sur 13,7 hectares à parts égales entre les trois communes de Savigny-Lès-Beaune, Pernand-Vergelesses et Aloxe-Corton.',
                 'url' => 'http://www.chandondebriailles.com/',
             ],
+            [
+                'nom' => 'Domaine Pierre Usseglio',
+                'descriptionText' => 'Nous élaborons un Châteauneuf-du-Pape rouge traditionnel.
+                La moitié de nos vignes a plus de 65 ans, l’autre atteint une quarantaine d’années. Les rendements obtenus sont très faibles, environ 20 à 25 hectolitres par hectare, en fonction des millésimes. Les vendanges sont toujours manuelles et le tri demeure sélectif. Le raisin est éraflé et la cuvaison dure de 25 à 30 jours.
+                Les vins sont ensuite élevés à 50 % en foudre de chêne pendant 12 et à 50 % en cuve béton. Dès lors, nous obtenons des vins puissants, ronds, aux arômes prononcés de fruits rouges et d’épices.
+                La période optimale pour les boire se situe entre 5 et 10 ans, en fonction des goûts et des millésimes.
+                Le Châteauneuf-du-Pape rouge accompagne les viandes, les plats en sauce ainsi que les fromages les plus savoureux.',
+                'url' => 'https://www.domaine-usseglio-pierre.com/',
+            ],
+            [
+                'nom' => 'Az. Ferrara',
+                'descriptionText' => 'The company Benito Ferrara has ancient roots, dating back to the dawn of the last century. Today it covers 8 hectares. All areas planted with vines fall in the municipality of Tufo, the hamlet of San Paolo, in the traditional production area for the cultivation of the vine Greek di Tufo, and in the municipality of Montemiletto for the production of the Aglianico grape. The soils are ideally located between 450 and 600 m above sea level, with a southern exposure, a hilly and a medium texture texture.',
+                'url' => 'http://www.benitoferrara.com/index.php/en/',
+            ],
+            [
+                'nom' => 'Château Potensac',
+                'descriptionText' => 'Ce domaine appartient à la même famille depuis la nuit des temps et il s’est toujours transmis par les femmes. Ainsi le propriétaire actuel Jean-Hubert DELON le tient de sa grand-mère paternelle, Georgette Liquard. Bien que proche du fleuve, Potensac se situe sur un point haut du Nord-Médoc. Le site est de ce fait peuplé depuis fort longtemps. En effet, Médoc vient de “ medio aquae ” qui signifie “ au milieu des eaux ”… Planté sur les sols les plus qualitatifs de la commune d’Ordonnac, le vignoble atteint aujourd’hui 60 hectares sur un terroir où la typicité de chaque cépage s’exprime très clairement, et confère au vin une formidable capacité au vieillissement. ',
+                'url' => 'http://www.domaines-delon.com/',
+            ],
+            [
+                'nom' => 'Bodegas y Viñedos Alión ',
+                'descriptionText' => 'Vin élaboré à partir de la variété Tinto fino. Il est vendangé à la main dans des caisses de 12 kg et est amené immédiatement à la cave pour son entrée sur les tables de sélection. Les fermentations sont menées à bien dans des cuves en bois avec un contrôle de température jusqu\'à obtenir une bonne extraction polyphénolique qui apportera la robe généreuse et la structure ferme qui constituent partie de la personnalité de ce vin et enfin un élevage en fût de 14 à 20 mois, dépendant des caractéristiques du cru, est réalisé dans sa totalité dans des nouvelles barriques bordelaises en chêne français. Ces barriques, des entreprises les plus prestigieuses de Bordeaux (Radoux, Taranssaud, Saury et Vicard), supposent un investissement en chêne important, car, millésime après millésime, tout le vin qui est élaboré chez Alión restera dans des nouvelles barriques qui, après son abandon pour être mis en bouteilles, ne seront pas réutilisées par la cave.',
+                'url' => 'http://www.vega-sicilia.com/',
+            ],
+            [
+                'nom' => 'Artisans Vignerons d’Yvorne',
+                'descriptionText' => 'L’AVY, ou Artisans Vignerons d’Yvorne, est une société coopérative fondée en 1902. Aujourd\'hui, notre équipe, forte d’une dizaine de professionnels, encave, vinifie et commercialise la production de vins suisses de ses quelque 120 membres.',
+                'url' => 'https://www.avy.ch/',
+            ],
         ]);
     }
 }
