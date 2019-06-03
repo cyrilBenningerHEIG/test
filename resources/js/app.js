@@ -22,7 +22,7 @@ window.JQuery = require('jquery')
 Vue.use(BootstrapVue);
 
 
-
+Vue.component('carte-produit',require('./components/CarteProduit.vue').default);
 Vue.component('nav-bar', require('./components/NavBar.vue').default);
 Vue.component('week-selection', require('./components/SelectionSemaine.vue').default);
 Vue.component('footer-bar', require('./components/Footer.vue').default);
