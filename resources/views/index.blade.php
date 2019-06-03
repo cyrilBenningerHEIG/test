@@ -16,11 +16,10 @@
             <div class="container">
                 <nav-bar></nav-bar>
                 <week-selection></week-selection>
-                <week-selection-card></week-selection-card>
+                <week-selection-card :vins='{{ $vins }}'></week-selection-card>
                 <week-selection-producer></week-selection-producer>
-                <history-bar></history-bar>
+                <history-bar :nbvins='{{ $nbvins }}' :nbregions='{{ $nbregions }}' :nbprodu='{{ $nbprodu }}'></history-bar>
                 <footer-bar></footer-bar>
-
             </div>
         </div>
             <script src="js/app.js"></script>
