@@ -15,7 +15,6 @@ $(document).ready(function() {
 
         $('#quantity').val(quantity + 1);
 
-
         // Increment
 
     });
@@ -32,6 +31,8 @@ $(document).ready(function() {
         if (quantity > 0) {
             $('#quantity').val(quantity - 1);
         }
+
     });
+
 
 });
