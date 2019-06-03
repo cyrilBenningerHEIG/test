@@ -48,7 +48,7 @@ Route::get('/panier', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-=======
+
 Route::get('/cgv', function () {
     return view('cgv');
 });
