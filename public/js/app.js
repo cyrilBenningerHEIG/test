@@ -65670,15 +65670,33 @@ var staticRenderFns = [
                   },
                   [
                     _c("a", { staticClass: "icon", attrs: { href: "#" } }, [
-                      _c("img", { attrs: { src: "images/recherche.svg" } })
+                      _c("img", {
+                        attrs: {
+                          src: "images/recherche.svg",
+                          width: "100px",
+                          height: "100px"
+                        }
+                      })
                     ]),
                     _vm._v(" "),
                     _c("a", { staticClass: "icon", attrs: { href: "#" } }, [
-                      _c("img", { attrs: { src: "images/compte.svg" } })
+                      _c("img", {
+                        attrs: {
+                          src: "images/compte.svg",
+                          width: "80px",
+                          height: "80px"
+                        }
+                      })
                     ]),
                     _vm._v(" "),
                     _c("a", { staticClass: "icon", attrs: { href: "#" } }, [
-                      _c("img", { attrs: { src: "images/panier.svg" } })
+                      _c("img", {
+                        attrs: {
+                          src: "images/panier.svg",
+                          width: "80px",
+                          height: "80px"
+                        }
+                      })
                     ])
                   ]
                 )
