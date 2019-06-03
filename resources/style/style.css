@@ -125,7 +125,6 @@ a.afooter {
 
 .cls-1 {
     fill: #CCBE9F;
-
 }
 
 .image-footer {
@@ -160,6 +159,14 @@ a.afooter {
     width: 100%;
     height: auto;
     margin: auto;
+}
+
+.price-ht-font {
+    font-size: 10px;
+}
+
+.article-font {
+    font-size: 12px;
 }
 
 
@@ -246,5 +253,4 @@ a.afooter {
     border-style: solid;
     border-width: 0.5px;
     border-radius: 25px;
-
 }
