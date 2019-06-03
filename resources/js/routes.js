@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import NavBar from "./components/NavBar"
+import NavBarLogin from "./components/NavBarLogin"
+import NavBarLogout from "./components/NavBarLogout"
 
 Vue.use(VueRouter)
 
@@ -9,7 +10,12 @@ const router = new VueRouter({
     routes : [
         {
             path: "/login",
-            component: NavBar
+            component: NavBarLogin
+        },
+
+        {
+            path: "/login",
+            component: NavBarLogout
         }
     ]
 })

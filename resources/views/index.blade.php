@@ -14,7 +14,15 @@
     <body>
         <div id="app">
             <div class="container">
-                <nav-bar></nav-bar>
+            @if(Auth::check())
+            <h2>Connecté</h2>
+                <nav-bar-login></nav-bar-login>
+                @else
+                <h2>Déconnecté</h2>
+                <nav-bar-logout></nav-bar-logout>
+                
+                @endif
+               <menu-home></menu-home>
                 <week-selection></week-selection>
                 <week-selection-card :vins='{{ $vins }}'></week-selection-card>
                 <week-selection-producer></week-selection-producer>
