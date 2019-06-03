@@ -125,6 +125,7 @@ a.afooter {
 
 .cls-1 {
     fill: #CCBE9F;
+<<<<<<< HEAD
 }
 
 .image-footer {
@@ -245,4 +246,6 @@ a.afooter {
     border-style: solid;
     border-width: 0.5px;
     border-radius: 25px;
+=======
+>>>>>>> 9dcc7a60f2a27b82c8f1a4686ef407c5ad875186
 }
