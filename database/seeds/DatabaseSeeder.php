@@ -22,5 +22,10 @@ class DatabaseSeeder extends Seeder
         $this->call(RegnsTableSeeder::class);
         $this->call(PrixesTableSeeder::class);
         $this->call(VinsTableSeeder::class);
+        $this->call(PromopsTableSeeder::class);
+        $this->call(Prixes_PromopsTableSeeder::class);
+        $this->call(Cepags_VinsTableSeeder::class);
+        $this->call(TypesTableSeeder::class);
+        $this->call(Types_VinsTableSeeder::class);
     }
 }

@@ -21,6 +21,15 @@ class AppelsTableSeeder extends Seeder
             [
                 'libelle' => 'Corton-Bressandes', 
             ],
+            [
+                'libelle' => 'Châteauneauf-du-Pape', 
+            ],
+            [
+                'libelle' => 'Médoc', 
+            ],
+            [
+                'libelle' => 'Yvorne Chablais AOC', 
+            ],
         ]);
     }
 }

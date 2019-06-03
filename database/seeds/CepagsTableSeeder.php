@@ -12,13 +12,14 @@ class CepagsTableSeeder extends Seeder
     public function run()
     {
         DB::table('cepags')->insert([
+        [    
             'nom' => 'Merlot',
         ],
         [
             'nom' => 'Cabernet Sauvignon', 
         ],
         [
-            'nom' => 'Cabernet franc',
+            'nom' => 'Cabernet Franc',
         ],
         [
             'nom' => 'Petit Verdot',
@@ -28,7 +29,25 @@ class CepagsTableSeeder extends Seeder
         ],
         [
             'nom' => 'Chardonnay',
-        ]
-        );
+        ],
+        [
+            'nom' => 'Grenache',
+        ],
+        [
+            'nom' => 'Syrah',
+        ],
+        [
+            'nom' => 'Greco',
+        ],
+        [
+            'nom' => 'Carmenère',
+        ],
+        [
+            'nom' => 'Tempranillo',
+        ],
+        [
+            'nom' => 'Chasselas',
+        ],
+        ]);
     }
 }
