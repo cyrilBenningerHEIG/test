@@ -87,21 +87,21 @@
 @endif
 </div>
 </div>
-<div class="form-group{{ $errors->has('motdepasse') ? ' has-error' : '' }}">
-<label for="motdepasse" class="col-md-4 control-label">Mot de passe</label>
+<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+<label for="password" class="col-md-4 control-label">Mot de passe</label>
 <div class="col-md-6">
-<input id="motdepasse" type="password" class="form-control" name="motdepasse" required>
-@if ($errors->has('motdepasse'))
+<input id="password" type="password" class="form-control" name="password" required>
+@if ($errors->has('password'))
 <span class="help-block">
-<strong>{{ $errors->first('motdepasse') }}</strong>
+<strong>{{ $errors->first('password') }}</strong>
 </span>
 @endif
 </div>
 </div>
 <div class="form-group">
-<label for="motdepasse-confirm" class="col-md-4 control-label">Confirmez le mot de passe</label>
+<label for="password-confirm" class="col-md-4 control-label">Confirmez le mot de passe</label>
 <div class="col-md-6">
-<input id="motdepasse-confirm" type="password" class="form-control" name="motdepasse_confirmation" required>
+<input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
 </div>
 </div>
 <div class="form-group">
