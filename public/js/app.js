@@ -6830,7 +6830,7 @@ var components = {
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/index.js ***!
   \***********************************************************/
-/*! exports provided: BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, Alert, Badge, Breadcrumb, Button, ButtonGroup, ButtonToolbar, InputGroup, Card, Carousel, Layout, Collapse, Dropdown, Embed, Form, FormGroup, FormCheckbox, FormRadio, FormInput, FormTextarea, FormFile, FormSelect, Image, Jumbotron, Link, ListGroup, Media, Modal, Nav, Navbar, Pagination, PaginationNav, Popover, Progress, Spinner, Table, Tabs, Toast, Tooltip, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, default */
+/*! exports provided: default, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, Alert, Badge, Breadcrumb, Button, ButtonGroup, ButtonToolbar, InputGroup, Card, Carousel, Layout, Collapse, Dropdown, Embed, Form, FormGroup, FormCheckbox, FormRadio, FormInput, FormTextarea, FormFile, FormSelect, Image, Jumbotron, Link, ListGroup, Media, Modal, Nav, Navbar, Pagination, PaginationNav, Popover, Progress, Spinner, Table, Tabs, Toast, Tooltip, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26952,7 +26952,6 @@ if(false) {}
       if (isCycling) {
         this.pause();
       }
-    }]);
 
       this._setActiveIndicatorElement(nextElement);
 
@@ -27615,11 +27614,6 @@ if(false) {}
         // to allow the menu to "escape" the scroll parent's boundaries
         // https://github.com/twbs/bootstrap/issues/24251
 
-      if (this._popper !== null) {
-        this._popper.scheduleUpdate();
-      }
-    } // Private
-    ;
 
         if (this._config.boundary !== 'scrollParent') {
           $(parent).addClass(ClassName$4.POSITION_STATIC);
@@ -27631,9 +27625,6 @@ if(false) {}
       // only needed because of broken event delegation on iOS
       // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
-        _this.toggle();
-      });
-    };
 
       if ('ontouchstart' in document.documentElement && $(parent).closest(Selector$4.NAVBAR_NAV).length === 0) {
         $(document.body).children().on('mouseover', null, $.noop);
@@ -28150,7 +28141,6 @@ if(false) {}
       if (!this._isShown || hideEvent.isDefaultPrevented()) {
         return;
       }
-    };
 
       this._isShown = false;
       var transition = $(this._element).hasClass(ClassName$5.FADE);
@@ -28537,90 +28527,6 @@ if(false) {}
    * ------------------------------------------------------------------------
    */
 
-  var NAME$6 = 'tooltip';
-  var VERSION$6 = '4.3.1';
-  var DATA_KEY$6 = 'bs.tooltip';
-  var EVENT_KEY$6 = "." + DATA_KEY$6;
-  var JQUERY_NO_CONFLICT$6 = $.fn[NAME$6];
-  var CLASS_PREFIX = 'bs-tooltip';
-  var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
-  var DISALLOWED_ATTRIBUTES = ['sanitize', 'whiteList', 'sanitizeFn'];
-  var DefaultType$4 = {
-    animation: 'boolean',
-    template: 'string',
-    title: '(string|element|function)',
-    trigger: 'string',
-    delay: '(number|object)',
-    html: 'boolean',
-    selector: '(string|boolean)',
-    placement: '(string|function)',
-    offset: '(number|string|function)',
-    container: '(string|element|boolean)',
-    fallbackPlacement: '(string|array)',
-    boundary: '(string|element)',
-    sanitize: 'boolean',
-    sanitizeFn: '(null|function)',
-    whiteList: 'object'
-  };
-  var AttachmentMap$1 = {
-    AUTO: 'auto',
-    TOP: 'top',
-    RIGHT: 'right',
-    BOTTOM: 'bottom',
-    LEFT: 'left'
-  };
-  var Default$4 = {
-    animation: true,
-    template: '<div class="tooltip" role="tooltip">' + '<div class="arrow"></div>' + '<div class="tooltip-inner"></div></div>',
-    trigger: 'hover focus',
-    title: '',
-    delay: 0,
-    html: false,
-    selector: false,
-    placement: 'top',
-    offset: 0,
-    container: false,
-    fallbackPlacement: 'flip',
-    boundary: 'scrollParent',
-    sanitize: true,
-    sanitizeFn: null,
-    whiteList: DefaultWhitelist
-  };
-  var HoverState = {
-    SHOW: 'show',
-    OUT: 'out'
-  };
-  var Event$6 = {
-    HIDE: "hide" + EVENT_KEY$6,
-    HIDDEN: "hidden" + EVENT_KEY$6,
-    SHOW: "show" + EVENT_KEY$6,
-    SHOWN: "shown" + EVENT_KEY$6,
-    INSERTED: "inserted" + EVENT_KEY$6,
-    CLICK: "click" + EVENT_KEY$6,
-    FOCUSIN: "focusin" + EVENT_KEY$6,
-    FOCUSOUT: "focusout" + EVENT_KEY$6,
-    MOUSEENTER: "mouseenter" + EVENT_KEY$6,
-    MOUSELEAVE: "mouseleave" + EVENT_KEY$6
-  };
-  var ClassName$6 = {
-    FADE: 'fade',
-    SHOW: 'show'
-  };
-  var Selector$6 = {
-    TOOLTIP: '.tooltip',
-    TOOLTIP_INNER: '.tooltip-inner',
-    ARROW: '.arrow'
-  };
-  var Trigger = {
-    HOVER: 'hover',
-    FOCUS: 'focus',
-    CLICK: 'click',
-    MANUAL: 'manual'
-    /**
-     * ------------------------------------------------------------------------
-     * Class Definition
-     * ------------------------------------------------------------------------
-     */
 
   $(document).on(Event$5.CLICK_DATA_API, Selector$5.DATA_TOGGLE, function (event) {
     var _this10 = this;
@@ -28907,34 +28813,6 @@ if(false) {}
       this._setListeners();
     } // Getters
 
-        $(this.element).trigger(this.constructor.Event.INSERTED);
-        this._popper = new Popper(this.element, tip, {
-          placement: attachment,
-          modifiers: {
-            offset: this._getOffset(),
-            flip: {
-              behavior: this.config.fallbackPlacement
-            },
-            arrow: {
-              element: Selector$6.ARROW
-            },
-            preventOverflow: {
-              boundariesElement: this.config.boundary
-            }
-          },
-          onCreate: function onCreate(data) {
-            if (data.originalPlacement !== data.placement) {
-              _this._handlePopperPlacementChange(data);
-            }
-          },
-          onUpdate: function onUpdate(data) {
-            return _this._handlePopperPlacementChange(data);
-          }
-        });
-        $(tip).addClass(ClassName$6.SHOW); // If this is a touch-enabled device we add extra
-        // empty mouseover listeners to the body's immediate children;
-        // only needed because of broken event delegation on iOS
-        // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
     var _proto = Tooltip.prototype;
 
@@ -29445,8 +29323,6 @@ if(false) {}
       if (tip.getAttribute('x-placement') !== null) {
         return;
       }
-    } // Static
-    ;
 
       $(tip).removeClass(ClassName$6.FADE);
       this.config.animation = false;
@@ -29911,11 +29787,8 @@ if(false) {}
 
         this._clear();
 
-        if (isActiveTarget) {
-          this._activate(this._targets[i]);
-        }
+        return;
       }
-    };
 
       var offsetLength = this._offsets.length;
 
@@ -31961,7 +31834,7 @@ exports.push([module.i, "@import url(http://fonts.googleapis.com/css?family=Mont
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
 // module
-exports.push([module.i, "body {\n    font-family: 'Montserrat', sans-serif;\n}\n\np {\n    font-family: 'Roboto', sans-serif;\n    padding: 0;\n    margin: 0;\n}\n\n.wrapper {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 10px;\n    grid-auto-rows: minmax(100px, auto);\n}\n\n.icon:hover {\n    fill-opacity: 0;\n}\n\n.logo {\n    width: 80%;\n}\n\n#icon_search {\n    width: 50px;\n}\n\n#icon_account {\n    width: 40px;\n    margin-left: 20px;\n    margin-right: 20px;\n    margin-bottom: 2px;\n}\n\n#icon_cart {\n    width: 35px;\n    margin-bottom: 2px;\n}\n\n.menu {\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n}\n\n.image {\n    width: 80%;\n    margin: auto auto;\n}\n\n.producer-logo {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin: 20px;\n}\n\n\n/* Histoire */\n\n.test {\n    background-color: #a62b35;\n    color: white;\n}\n\n.btn-history {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    background-color: white;\n    color: #a62b35;\n    border: none;\n}\n\np.box {\n    margin: 50px;\n}\n\n.counter {\n    padding-top: 50px;\n    padding-right: 50px;\n    padding-left: 50px;\n}\n\n\n/* Footer */\n\n#img-logo {\n    margin-left: 25px;\n}\n\n.text-muted {\n    color: black !important;\n}\n\n.card {\n    border: none;\n}\n\n.card-group {\n    padding-top: 50px;\n}\n\n.card-img-top {\n    height: 350px;\n}\n\n.btn-danger {\n    background-color: #953640 !important;\n    border-color: #953640 !important;\n    color: aliceblue !important;\n}\n\n.page-footer {\n    background-color: #2B2B2B;\n    color: #CCBE9F;\n    font-family: 'Roboto', sans-serif;\n}\n\na.afooter {\n    color: #CCBE9F !important;\n}\n\n.cls-1 {\n    fill: #CCBE9F;\n\n}\n\n.image-footer {\n    width: 20%;\n}\n\n.footer-size {\n    font-size: 10px;\n}\n\n.footer-col {\n    margin-left: 5px;\n}\n\n.adresse-size {\n    font-size: 11px;\n    line-height: 11px;\n}\n\n\n/* Product page */\n\n.roadMap {\n    white-space: nowrap;\n}\n\n.arrow {\n    width: 2.5%;\n}\n\n.bottleImg {\n    width: 100%;\n    height: auto;\n    margin: auto;\n}\n\n\n/* CONTACT */\n\n.contact-form {\n    background: #2B2B2B;\n    margin-top: 10%;\n    margin-bottom: 5%;\n    width: 70%;\n}\n\n.contact-form .form-control {\n    border-radius: 25;\n}\n\n.contact-image {\n    text-align: center;\n}\n\n.contact-image img {\n    border-radius: 25;\n    width: 11%;\n    margin-top: -3%;\n    -webkit-transform: rotate(29deg);\n            transform: rotate(29deg);\n}\n\n.contact-form form {\n    padding: 14%;\n}\n\n.contact-form form .row {\n    margin-bottom: -7%;\n}\n\n.contact-form h3 {\n    margin-bottom: 8%;\n    margin-top: -10%;\n    text-align: center;\n    color: white;\n}\n\n.contact-form .btnContact {\n    width: 50%;\n    border: none;\n    border-radius: 25px;\n    padding: 1.5%;\n    background: #dc3545;\n    font-weight: 600;\n    color: #fff;\n    cursor: pointer;\n}\n\n.btnContactSubmit {\n    width: 50%;\n    padding: 1.5%;\n    color: #fff;\n    border: none;\n    cursor: pointer;\n}\n\n.icon_display img {\n    width: 50px;\n}\n\n#tri-produit {\n    margin-top: 50px;\n}\n\n.number_results {\n    padding-top: 15px;\n}\n\n#weekproduct {\n    width: 10rem;\n}\n\n.card-img-top {\n    width: 10rem;\n}\n\n.btn-filter {\n    border-color: grey;\n    border-style: solid;\n    border-width: 0.5px;\n    border-radius: 25px;\n\n}\n.price-ht-font {\n    font-size: 10px;\n}\n\n.article-font {\n    font-size: 12px;\n}\n#cart-produit-img{\n    width : 68px;\n    height : 150px;\n}\n.btn-panier-2{\n    border-color: grey;\n    border-style: solid;\n    border-width: 1px;\n\n}\n.action-btn{\nmargin-bottom: 25px;\n}", ""]);
+exports.push([module.i, "body {\n    font-family: 'Montserrat', sans-serif;\n}\n\np {\n    font-family: 'Roboto', sans-serif;\n    padding: 0;\n    margin: 0;\n}\n\n.p {\n    font-family: 'Roboto', sans-serif;\n    padding: 0;\n    margin: 0;\n}\n\n.wrapper {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 10px;\n    grid-auto-rows: minmax(100px, auto);\n}\n\n.icon:hover {\n    fill-opacity: 0;\n}\n\n.logo {\n    width: 80%;\n}\n\n#icon_search {\n    width: 50px;\n}\n\n#icon_account {\n    width: 40px;\n    margin-left: 20px;\n    margin-right: 20px;\n    margin-bottom: 2px;\n}\n\n#icon_cart {\n    width: 35px;\n    margin-bottom: 2px;\n}\n\n.menu {\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n}\n\n.image {\n    width: 80%;\n    margin: auto auto;\n}\n\n.producer-logo {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin: 20px;\n}\n\n\n/* Histoire */\n\n.test {\n    background-color: #a62b35;\n    color: white;\n}\n\n.btn-history {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    background-color: white;\n    color: #a62b35;\n    border: none;\n}\n\np.box {\n    margin: 50px;\n}\n\n.counter {\n    padding-top: 50px;\n    padding-right: 50px;\n    padding-left: 50px;\n}\n\n\n/* Footer */\n\n#img-logo {\n    margin-left: 25px;\n}\n\n.text-muted {\n    color: black !important;\n}\n\n.card {\n    border: none;\n}\n\n.card-group {\n    padding-top: 50px;\n}\n\n.card-img-top {\n    height: 350px;\n}\n\n.btn-danger {\n    background-color: #953640 !important;\n    border-color: #953640 !important;\n    color: aliceblue !important;\n}\n\n.page-footer {\n    background-color: #2B2B2B;\n    color: #CCBE9F;\n    font-family: 'Roboto', sans-serif;\n}\n\na.afooter {\n    color: #CCBE9F !important;\n}\n\n.cls-1 {\n    fill: #CCBE9F;\n}\n\n.image-footer {\n    width: 20%;\n}\n\n.footer-size {\n    font-size: 10px;\n}\n\n.footer-col {\n    margin-left: 5px;\n}\n\n.adresse-size {\n    font-size: 11px;\n    line-height: 11px;\n}\n\n\n/* Product page */\n\n.roadMap {\n    white-space: nowrap;\n}\n\n.arrow {\n    width: 2.5%;\n}\n\n.bottleImg {\n    width: 100%;\n    height: auto;\n    margin: auto;\n}\n\n.price-ht-font {\n    font-size: 10px;\n}\n\n.article-font {\n    font-size: 12px;\n}\n\n.nav-pills .nav-link.active,\n.nav-pills .show>.nav-link {\n    color: #2B2B2B;\n    background-color: #CCBE9F;\n}\n\n.pills {\n    color: #f2ebda;\n}\n\n\n/* CONTACT */\n\n.contact-form {\n    background: #2B2B2B;\n    margin-top: 10%;\n    margin-bottom: 5%;\n    width: 70%;\n}\n\n.contact-form .form-control {\n    border-radius: 25;\n}\n\n.contact-image {\n    text-align: center;\n}\n\n.contact-image img {\n    border-radius: 25;\n    width: 11%;\n    margin-top: -3%;\n    -webkit-transform: rotate(29deg);\n            transform: rotate(29deg);\n}\n\n.contact-form form {\n    padding: 14%;\n}\n\n.contact-form form .row {\n    margin-bottom: -7%;\n}\n\n.contact-form h3 {\n    margin-bottom: 8%;\n    margin-top: -10%;\n    text-align: center;\n    color: white;\n}\n\n.contact-form .btnContact {\n    width: 50%;\n    border: none;\n    border-radius: 25px;\n    padding: 1.5%;\n    background: #dc3545;\n    font-weight: 600;\n    color: #fff;\n    cursor: pointer;\n}\n\n.btnContactSubmit {\n    width: 50%;\n    padding: 1.5%;\n    color: #fff;\n    border: none;\n    cursor: pointer;\n}\n\n.icon_display img {\n    width: 50px;\n}\n\n#tri-produit {\n    margin-top: 50px;\n}\n\n.number_results {\n    padding-top: 15px;\n}\n\n#weekproduct {\n    width: 10rem;\n}\n\n.card-img-top {\n    width: 10rem;\n}\n\n.btn-filter {\n    border-color: grey;\n    border-style: solid;\n    border-width: 0.5px;\n    border-radius: 25px;\n\n}\n.price-ht-font {\n    font-size: 10px;\n}\n\n.article-font {\n    font-size: 12px;\n}\n#cart-produit-img{\n    width : 68px;\n    height : 150px;\n}\n.btn-panier-2{\n    border-color: grey;\n    border-style: solid;\n    border-width: 1px;\n\n}\n.action-btn{\nmargin-bottom: 25px;\n}", ""]);
 
 // exports
 
@@ -34838,7 +34711,6 @@ return Sizzle;
 
 })( window );
 
-// One-time assignments
 
 
 jQuery.find = Sizzle;
@@ -34852,12 +34724,6 @@ jQuery.isXMLDoc = Sizzle.isXML;
 jQuery.contains = Sizzle.contains;
 jQuery.escapeSelector = Sizzle.escape;
 
-// Support: Webkit<537.32 - Safari 6.0.3/Chrome 25 (fixed in Chrome 27)
-// Detached nodes confoundingly follow *each other*
-support.sortDetached = assert(function( el ) {
-	// Should return 1, but returns 4 (following)
-	return el.compareDocumentPosition( document.createElement("fieldset") ) & 1;
-});
 
 
 
@@ -34902,11 +34768,6 @@ function nodeName( elem, name ) {
 var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
 
 
-	for ( ; n; n = n.nextSibling ) {
-		if ( n.nodeType === 1 && n !== elem ) {
-			matched.push( n );
-		}
-	}
 
 // Implement the identical functionality for filter and not
 function winnow( elements, qualifier, not ) {
@@ -35289,10 +35150,6 @@ jQuery.each( {
 var rnothtmlwhite = ( /[^\x20\t\r\n\f]+/g );
 
 
-			// Remove duplicates
-			if ( !guaranteedUnique[ name ] ) {
-				jQuery.uniqueSort( matched );
-			}
 
 // Convert String-formatted options into Object-formatted ones
 function createOptions( options ) {
@@ -35519,9 +35376,6 @@ jQuery.Callbacks = function( options ) {
 	return self;
 };
 
-					// Run callback and check for early termination
-					if ( list[ firingIndex ].apply( memory[ 0 ], memory[ 1 ] ) === false &&
-						options.stopOnFalse ) {
 
 function Identity( v ) {
 	return v;
@@ -36261,9 +36115,6 @@ var dataPriv = new Data();
 
 var dataUser = new Data();
 
-	if ( rbrace.test( data ) ) {
-		return JSON.parse( data );
-	}
 
 
 //	Implementation Summary
@@ -36434,11 +36285,6 @@ jQuery.fn.extend( {
 	}
 } );
 
-			// Add a progress sentinel to prevent the fx queue from being
-			// automatically dequeued
-			if ( type === "fx" ) {
-				queue.unshift( "inprogress" );
-			}
 
 jQuery.extend( {
 	queue: function( elem, type, data ) {
@@ -37859,12 +37705,6 @@ jQuery.fn.extend( {
 	}
 } );
 
-		if ( e && !this.isSimulated ) {
-			e.preventDefault();
-		}
-	},
-	stopPropagation: function() {
-		var e = this.originalEvent;
 
 var
 
@@ -39113,30 +38953,8 @@ jQuery.fx = Tween.prototype.init;
 // Back compat <1.8 extension point
 jQuery.fx.step = {};
 
-// These hooks are used by animate to expand properties
-jQuery.each( {
-	margin: "",
-	padding: "",
-	border: "Width"
-}, function( prefix, suffix ) {
-	jQuery.cssHooks[ prefix + suffix ] = {
-		expand: function( value ) {
-			var i = 0,
-				expanded = {},
-
-				// Assumes a single number if not a string
-				parts = typeof value === "string" ? value.split( " " ) : [ value ];
-
-			for ( ; i < 4; i++ ) {
-				expanded[ prefix + cssExpand[ i ] + suffix ] =
-					parts[ i ] || parts[ i - 2 ] || parts[ 0 ];
-			}
 
 
-	if ( prefix !== "margin" ) {
-		jQuery.cssHooks[ prefix + suffix ].set = setPositiveNumber;
-	}
-} );
 
 var
 	fxNow, inProgress,
@@ -40724,8 +40542,6 @@ var nonce = Date.now();
 
 var rquery = ( /\?/ );
 
-		jQuery.event.trigger( e, null, elem );
-	}
 
 
 // Cross-browser xml parsing
@@ -42139,10 +41955,6 @@ jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 
 
 
-		// Delegate to script
-		return "script";
-	}
-} );
 
 // Support: Safari 8 only
 // In Safari 8 documents created via document.implementation.createHTMLDocument
@@ -48258,220 +48070,6 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("span"),
               _vm._v(" "),
-              _c("p", { staticClass: "mt-2 h5" }, [
-                _vm._v("CHF "),
-                _c("b", [_vm._v("17.40")])
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "price-ht-font" }, [
-                _c("i", [
-                  _vm._v("("),
-                  _c("span", [_vm._v("13")]),
-                  _vm._v(" CHF hors TVA)")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("span"),
-              _vm._v(" "),
-              _c("span"),
-              _vm._v(" "),
-              _c(
-                "p",
-                { staticClass: "font-weight-light mt-2 mb-2 article-font" },
-                [_vm._v(" Numéro d'article : HFIWOMSH")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { staticClass: "mt-1 mb-1" }, [
-              _c("span", [
-                _c("label", [_vm._v("VARIANTES:")]),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "btn btn-outline-secondary btn-sm disabled",
-                    attrs: {
-                      href: "#",
-                      role: "button",
-                      "aria-disabled": "true"
-                    }
-                  },
-                  [_vm._v("2012")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "btn btn-outline-secondary btn-sm active",
-                    attrs: {
-                      href: "#",
-                      role: "button",
-                      "aria-disabled": "true"
-                    }
-                  },
-                  [_vm._v("2015")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass: "btn btn-outline-secondary btn-sm disabled",
-                    attrs: {
-                      href: "#",
-                      role: "button",
-                      "aria-disabled": "true"
-                    }
-                  },
-                  [_vm._v("2017")]
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { staticClass: "mt-1 mb-1" }, [
-              _c("label", [_vm._v("QUANTITÉS:")]),
-              _vm._v(" "),
-              _c("div", {}, [
-                _c("div", { staticClass: "input-group" }, [
-                  _c("span", { staticClass: "input-group-btn" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "quantity-left-minus btn btn-outline-secondary btn-sm",
-                        attrs: {
-                          type: "button",
-                          "data-type": "minus",
-                          "data-field": ""
-                        }
-                      },
-                      [
-                        _c(
-                          "span",
-                          { staticClass: "glyphicon glyphicon-minus" },
-                          [_vm._v("-")]
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control input-number form-control-sm",
-                    attrs: {
-                      type: "text",
-                      id: "quantity",
-                      name: "quantity",
-                      value: "1",
-                      min: "1",
-                      max: "20"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "input-group-btn" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "quantity-right-plus btn btn-outline-secondary btn-sm",
-                        attrs: {
-                          type: "button",
-                          "data-type": "plus",
-                          "data-field": ""
-                        }
-                      },
-                      [
-                        _c(
-                          "span",
-                          { staticClass: "glyphicon glyphicon-plus" },
-                          [_vm._v("+")]
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-outline-danger btn-sm ml-4 mr-4",
-                      attrs: { type: "button" }
-                    },
-                    [_vm._v("Ajouter au panier")]
-                  )
-                ])
-              ])
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "nav flex-column nav-pills",
-          attrs: {
-            id: "v-pills-tab",
-            role: "tablist",
-            "aria-orientation": "vertical"
-          }
-        },
-        [
-          _c(
-            "a",
-            {
-              staticClass: "nav-link active",
-              attrs: {
-                id: "v-pills-home-tab",
-                "data-toggle": "pill",
-                href: "#v-pills-home",
-                role: "tab",
-                "aria-controls": "v-pills-home",
-                "aria-selected": "true"
-              }
-            },
-            [_vm._v("Home")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nav-link",
-              attrs: {
-                id: "v-pills-profile-tab",
-                "data-toggle": "pill",
-                href: "#v-pills-profile",
-                role: "tab",
-                "aria-controls": "v-pills-profile",
-                "aria-selected": "false"
-              }
-            },
-            [_vm._v("Profile")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nav-link",
-              attrs: {
-                id: "v-pills-messages-tab",
-                "data-toggle": "pill",
-                href: "#v-pills-messages",
-                role: "tab",
-                "aria-controls": "v-pills-messages",
-                "aria-selected": "false"
-              }
-            },
-            [_vm._v("Messages")]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "col mt-5" }, [
-            _c("div", [
-              _c("h4", [_vm._v("Château Cambon la Pelouse - 2015")]),
-              _vm._v(" "),
-              _c("span"),
-              _vm._v(" "),
               _c("p", { staticClass: "mt-3 mb-3 h5" }, [
                 _vm._v("CHF "),
                 _c("b", [_vm._v("17.40  ")]),
@@ -48663,78 +48261,137 @@ var staticRenderFns = [
           _c(
             "div",
             {
-              staticClass: "nav-link",
+              staticClass: "nav flex-column nav-pills text-info",
               attrs: {
-                id: "v-pills-settings-tab",
-                "data-toggle": "pill",
-                href: "#v-pills-settings",
-                role: "tab",
-                "aria-controls": "v-pills-settings",
-                "aria-selected": "false"
+                id: "v-pills-tab",
+                role: "tablist",
+                "aria-orientation": "vertical"
               }
             },
-            [_vm._v("Settings")]
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-link text-right pills active",
+                  attrs: {
+                    id: "v-pills-home-tab",
+                    "data-toggle": "pill",
+                    href: "#v-pills-home",
+                    role: "tab",
+                    "aria-controls": "v-pills-home",
+                    "aria-selected": "true"
+                  }
+                },
+                [_vm._v("Description")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "nav-link text-right pills",
+                  attrs: {
+                    id: "v-pills-profile-tab",
+                    "data-toggle": "pill",
+                    href: "#v-pills-profile",
+                    role: "tab",
+                    "aria-controls": "v-pills-profile",
+                    "aria-selected": "false"
+                  }
+                },
+                [_vm._v("Informations")]
+              )
+            ]
           )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "tab-content", attrs: { id: "v-pills-tabContent" } },
-        [
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-8" }, [
           _c(
             "div",
-            {
-              staticClass: "tab-pane fade show active",
-              attrs: {
-                id: "v-pills-home",
-                role: "tabpanel",
-                "aria-labelledby": "v-pills-home-tab"
-              }
-            },
-            [_vm._v("Home")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "tab-pane fade",
-              attrs: {
-                id: "v-pills-profile",
-                role: "tabpanel",
-                "aria-labelledby": "v-pills-profile-tab"
-              }
-            },
-            [_vm._v("Profile")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "tab-pane fade",
-              attrs: {
-                id: "v-pills-messages",
-                role: "tabpanel",
-                "aria-labelledby": "v-pills-messages-tab"
-              }
-            },
-            [_vm._v("Message")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "tab-pane fade",
-              attrs: {
-                id: "v-pills-settings",
-                role: "tabpanel",
-                "aria-labelledby": "v-pills-settings-tab"
-              }
-            },
-            [_vm._v("Setting")]
+            { staticClass: "tab-content", attrs: { id: "v-pills-tabContent" } },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "tab-pane fade show active text-justify",
+                  attrs: {
+                    id: "v-pills-home",
+                    role: "tabpanel",
+                    "aria-labelledby": "v-pills-home-tab"
+                  }
+                },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat."
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "tab-pane fade",
+                  attrs: {
+                    id: "v-pills-profile",
+                    role: "tabpanel",
+                    "aria-labelledby": "v-pills-profile-tab"
+                  }
+                },
+                [
+                  _c("table", { staticClass: "p table" }, [
+                    _c("tr", [
+                      _c("td", [_vm._v("Teneur en alcool")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("13.5°")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Cotation")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("WeinWisser : 18/20")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Classement")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Cru Bourgeois supérieur")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Apogée")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("2022 - 2038")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Producteur")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Château Cambon la Pelouse")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Cépage(s)")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          "53% Merlot, 32.7% Cabernet Sauvignon, 12.3% Cabernet Franc, 2% Petit Verdot"
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Type")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Vin rouge")])
+                    ])
+                  ])
+                ]
+              )
+            ]
           )
-        ]
-      )
+        ])
+      ])
     ])
   }
 ]
