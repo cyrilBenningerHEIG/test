@@ -4,15 +4,15 @@
     <div class="container counter">
       <div class="row">
         <div class="col-sm">
-          <span class="counter">200</span><br>
+          <span class="counter">{{ nbregions }}</span><br>
           <h6>RÉGIONS</h6>
         </div>
         <div class="col-sm">
-          <span class="counter">500</span>
+          <span class="counter">{{ nbvins }}</span>
           <h6>VINS</h6>
         </div>
         <div class="col-sm">
-          <span class="counter">300</span>
+          <span class="counter">{{ nbprodu }}</span>
           <h6>PRODUCTEURS</h6>
         </div>
       </div>
@@ -21,3 +21,17 @@
     <a href="histoire"><button class="btn btn-primary btn-history btn-outline-danger">CONSULTER L'HISTOIRE DE GAZZAR</button></a>
   </div>
 </template>
+<script>
+export default {
+  props: ['nbvins', 'nbregions', 'nbprodu'],
+  
+
+    data(){
+        return{
+          nbvins:'',
+          nbregions:'',
+          nbprodu:'',
+        }
+     },
+}
+</script>

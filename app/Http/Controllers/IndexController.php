@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Vin;
+use App\regn;
+use App\produ;
 
 class IndexController extends Controller
 {
@@ -14,10 +16,16 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $vins = Vin::inRandomOrder()->take(5)->get();
+        $vins = Vin::all();
+        $nbvins = Vin::count();
+        $nbregions = Regn::count();
+        $nbprodu = Produ::count();
 
         return view('index', [
             'vins' => $vins,
+            'nbvins' => $nbvins,
+            'nbregions' => $nbregions,
+            'nbprodu' => $nbprodu,
         ]);
     }
 }
