@@ -16,8 +16,7 @@
             <div class="container">
             <nav-product-bar></nav-product-bar>
             <product-page></product-page>
-
-
+            <week-selection-card></week-selection-card>
 
 
 
