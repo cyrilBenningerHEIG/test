@@ -11,9 +11,9 @@ class clnt extends Authenticatable
 
     protected $table = 'clnts';
 
-    protected $fillable=['nom', 'prenom', 'dateNaissance', 'telephone', 'sexe', 'email', 'motdepasse'];
+    protected $fillable=['nom', 'prenom', 'dateNaissance', 'telephone', 'sexe', 'email', 'password'];
 
-    protected $hidden = ['motDePasse', 'remember_token'];
+    protected $hidden = ['password', 'remember_token'];
 
     public function adress() {
         return $this->hasMany('App\adres');

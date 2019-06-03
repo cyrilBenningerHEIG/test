@@ -6,12 +6,14 @@
 
 window.Vue = require('vue');
 import Vue from 'vue';
+import Router from './routes.js'
 import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import '../style/style.css';
 import './counter.js';
+
 // import Counter from './countUp/dist/countUp'
 
 window.$ = require('jquery')
@@ -47,6 +49,7 @@ Vue.component('panier-produit',require('./components/Panier.vue').default);
 
 const app = new Vue({
     el: '#app',
+    router: Router,
 });
 
 
