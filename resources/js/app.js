@@ -25,7 +25,9 @@ Vue.use(BootstrapVue);
 
 
 
-Vue.component('nav-bar', require('./components/NavBar.vue').default);
+Vue.component('nav-bar-login', require('./components/NavBarLogin.vue').default);
+Vue.component('nav-bar-logout', require('./components/NavBarLogout.vue').default);
+Vue.component('menu-home', require('./components/Menu.vue').default);
 Vue.component('week-selection', require('./components/SelectionSemaine.vue').default);
 Vue.component('footer-bar', require('./components/Footer.vue').default);
 Vue.component('week-selection-card', require('./components/CarteSelectionSemaine.vue').default);
@@ -52,7 +54,3 @@ const app = new Vue({
     router: Router,
 });
 
-
-
-window.$ = require('jquery')
-window.JQuery = require('jquery')
