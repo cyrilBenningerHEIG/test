@@ -42,6 +42,11 @@ Route::get('/panier', function () {
     return view('panier');
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/cgv', function () {
     return view('cgv');
 });
@@ -53,3 +58,4 @@ Route::get('/contact', function () {
 Route::get('/histoire', function () {
     return view('histoire');
 });
+

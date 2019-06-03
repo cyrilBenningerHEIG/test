@@ -9,7 +9,9 @@ import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import '../style/style.css';
+import './counter.js';
 // import Counter from './countUp/dist/countUp'
 
 window.$ = require('jquery')
@@ -35,6 +37,13 @@ Vue.component('contact-form', require('./components/ContactForm.vue').default);
 //Page produits
 Vue.component('nav-product-bar', require('./components/NavProductBar.vue').default);
 Vue.component('product-page', require('./components/ProductPage.vue').default);
+Vue.component('carte-produit',require('./components/CarteProduit.vue').default);
+
+//CGV 
+Vue.component('cgv-texte',require('./components/CGV.vue').default);
+
+//Panier 
+Vue.component('panier-produit',require('./components/Panier.vue').default);
 
 const app = new Vue({
     el: '#app',
@@ -44,4 +53,3 @@ const app = new Vue({
 
 window.$ = require('jquery')
 window.JQuery = require('jquery')
-

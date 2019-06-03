@@ -1,4 +1,5 @@
 <template>
+
   <div class="container">
     <div class="row mt-5 justify-content-center">
       <div class="filters mx-auto">
@@ -6,7 +7,7 @@
           <button
             id="type-btn"
             type="button"
-            class="btn btn-white dropdown-toggle"
+            class="btn btn-white dropdown-toggle btn-filter"
             data-toggle="dropdown"
             aria-haspopup="false"
             aria-expanded="true"

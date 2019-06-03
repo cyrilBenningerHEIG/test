@@ -5,7 +5,7 @@
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-4 pt-1"></div>
         <div class="col-4">
-          <a class="blog-header-logo text-dark" href="#">
+          <a class="blog-header-logo text-dark" href="/public">
             <img class="logo" id="img-logo" src="/public/images/logo.svg">
           </a>
         </div>
@@ -19,7 +19,7 @@
   </div>
 
    <div class="productImg">
-         <img class="img-fluid" src="/resources/js/assets/img/product.png" />
+         <img class="img-fluid" src="/public/images/product.png" />
   </div>
 
 
