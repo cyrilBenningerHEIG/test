@@ -9,7 +9,9 @@ import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import '../style/style.css';
+import './counter.js';
 // import Counter from './countUp/dist/countUp'
 
 window.$ = require('jquery')
@@ -44,4 +46,3 @@ const app = new Vue({
 
 window.$ = require('jquery')
 window.JQuery = require('jquery')
-
