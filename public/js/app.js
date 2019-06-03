@@ -86,42 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CarteSelectionSemaine.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CarteSelectionSemaine.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      weekselection: [],
-      weekselectionproduct: {
-        no: '',
-        nom: '',
-        description: ''
-      },
-      weekselectionproduct_id: ''
-    };
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/bootstrap-vue/dist/bootstrap-vue.css":
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/dist/bootstrap-vue.css ***!
@@ -6866,7 +6830,7 @@ var components = {
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/index.js ***!
   \***********************************************************/
-/*! exports provided: default, BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, Alert, Badge, Breadcrumb, Button, ButtonGroup, ButtonToolbar, InputGroup, Card, Carousel, Layout, Collapse, Dropdown, Embed, Form, FormGroup, FormCheckbox, FormRadio, FormInput, FormTextarea, FormFile, FormSelect, Image, Jumbotron, Link, ListGroup, Media, Modal, Nav, Navbar, Pagination, PaginationNav, Popover, Progress, Spinner, Table, Tabs, Toast, Tooltip, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip */
+/*! exports provided: BVModalPlugin, BVToastPlugin, AlertPlugin, BadgePlugin, BreadcrumbPlugin, ButtonPlugin, ButtonGroupPlugin, ButtonToolbarPlugin, InputGroupPlugin, CardPlugin, CarouselPlugin, LayoutPlugin, CollapsePlugin, DropdownPlugin, EmbedPlugin, FormPlugin, FormGroupPlugin, FormCheckboxPlugin, FormRadioPlugin, FormInputPlugin, FormTextareaPlugin, FormFilePlugin, FormSelectPlugin, ImagePlugin, JumbotronPlugin, LinkPlugin, ListGroupPlugin, MediaPlugin, ModalPlugin, NavPlugin, NavbarPlugin, PaginationPlugin, PaginationNavPlugin, PopoverPlugin, ProgressPlugin, SpinnerPlugin, TablePlugin, TabsPlugin, ToastPlugin, TooltipPlugin, Alert, Badge, Breadcrumb, Button, ButtonGroup, ButtonToolbar, InputGroup, Card, Carousel, Layout, Collapse, Dropdown, Embed, Form, FormGroup, FormCheckbox, FormRadio, FormInput, FormTextarea, FormFile, FormSelect, Image, Jumbotron, Link, ListGroup, Media, Modal, Nav, Navbar, Pagination, PaginationNav, Popover, Progress, Spinner, Table, Tabs, Toast, Tooltip, BAlert, BBadge, BBreadcrumb, BBreadcrumbItem, BBreadcrumbLink, BButton, BButtonClose, BButtonGroup, BButtonToolbar, BInputGroup, BInputGroupAddon, BInputGroupPrepend, BInputGroupAppend, BInputGroupText, BCard, BCardHeader, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, BCardImg, BCardImgLazy, BCardText, BCardGroup, BCarousel, BCarouselSlide, BContainer, BRow, BCol, BFormRow, BCollapse, BDropdown, BDropdownItem, BDropdownItemButton, BDropdownHeader, BDropdownDivider, BDropdownForm, BDropdownText, BDropdownGroup, BEmbed, BForm, BFormDatalist, BFormText, BFormInvalidFeedback, BFormValidFeedback, BFormGroup, BFormCheckbox, BFormCheckboxGroup, BFormRadio, BFormRadioGroup, BFormInput, BFormTextarea, BFormFile, BFormSelect, BImg, BImgLazy, BJumbotron, BLink, BListGroup, BListGroupItem, BMedia, BMediaAside, BMediaBody, BModal, BNav, BNavItem, BNavText, BNavForm, BNavItemDropdown, BNavbar, BNavbarNav, BNavbarBrand, BNavbarToggle, BPagination, BPaginationNav, BPopover, BProgress, BProgressBar, BSpinner, BTable, BTabs, BTab, BToast, BToaster, BTooltip, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26988,6 +26952,7 @@ if(false) {}
       if (isCycling) {
         this.pause();
       }
+    }]);
 
       this._setActiveIndicatorElement(nextElement);
 
@@ -27650,6 +27615,11 @@ if(false) {}
         // to allow the menu to "escape" the scroll parent's boundaries
         // https://github.com/twbs/bootstrap/issues/24251
 
+      if (this._popper !== null) {
+        this._popper.scheduleUpdate();
+      }
+    } // Private
+    ;
 
         if (this._config.boundary !== 'scrollParent') {
           $(parent).addClass(ClassName$4.POSITION_STATIC);
@@ -27661,6 +27631,9 @@ if(false) {}
       // only needed because of broken event delegation on iOS
       // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
+        _this.toggle();
+      });
+    };
 
       if ('ontouchstart' in document.documentElement && $(parent).closest(Selector$4.NAVBAR_NAV).length === 0) {
         $(document.body).children().on('mouseover', null, $.noop);
@@ -28177,6 +28150,7 @@ if(false) {}
       if (!this._isShown || hideEvent.isDefaultPrevented()) {
         return;
       }
+    };
 
       this._isShown = false;
       var transition = $(this._element).hasClass(ClassName$5.FADE);
@@ -28563,6 +28537,90 @@ if(false) {}
    * ------------------------------------------------------------------------
    */
 
+  var NAME$6 = 'tooltip';
+  var VERSION$6 = '4.3.1';
+  var DATA_KEY$6 = 'bs.tooltip';
+  var EVENT_KEY$6 = "." + DATA_KEY$6;
+  var JQUERY_NO_CONFLICT$6 = $.fn[NAME$6];
+  var CLASS_PREFIX = 'bs-tooltip';
+  var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
+  var DISALLOWED_ATTRIBUTES = ['sanitize', 'whiteList', 'sanitizeFn'];
+  var DefaultType$4 = {
+    animation: 'boolean',
+    template: 'string',
+    title: '(string|element|function)',
+    trigger: 'string',
+    delay: '(number|object)',
+    html: 'boolean',
+    selector: '(string|boolean)',
+    placement: '(string|function)',
+    offset: '(number|string|function)',
+    container: '(string|element|boolean)',
+    fallbackPlacement: '(string|array)',
+    boundary: '(string|element)',
+    sanitize: 'boolean',
+    sanitizeFn: '(null|function)',
+    whiteList: 'object'
+  };
+  var AttachmentMap$1 = {
+    AUTO: 'auto',
+    TOP: 'top',
+    RIGHT: 'right',
+    BOTTOM: 'bottom',
+    LEFT: 'left'
+  };
+  var Default$4 = {
+    animation: true,
+    template: '<div class="tooltip" role="tooltip">' + '<div class="arrow"></div>' + '<div class="tooltip-inner"></div></div>',
+    trigger: 'hover focus',
+    title: '',
+    delay: 0,
+    html: false,
+    selector: false,
+    placement: 'top',
+    offset: 0,
+    container: false,
+    fallbackPlacement: 'flip',
+    boundary: 'scrollParent',
+    sanitize: true,
+    sanitizeFn: null,
+    whiteList: DefaultWhitelist
+  };
+  var HoverState = {
+    SHOW: 'show',
+    OUT: 'out'
+  };
+  var Event$6 = {
+    HIDE: "hide" + EVENT_KEY$6,
+    HIDDEN: "hidden" + EVENT_KEY$6,
+    SHOW: "show" + EVENT_KEY$6,
+    SHOWN: "shown" + EVENT_KEY$6,
+    INSERTED: "inserted" + EVENT_KEY$6,
+    CLICK: "click" + EVENT_KEY$6,
+    FOCUSIN: "focusin" + EVENT_KEY$6,
+    FOCUSOUT: "focusout" + EVENT_KEY$6,
+    MOUSEENTER: "mouseenter" + EVENT_KEY$6,
+    MOUSELEAVE: "mouseleave" + EVENT_KEY$6
+  };
+  var ClassName$6 = {
+    FADE: 'fade',
+    SHOW: 'show'
+  };
+  var Selector$6 = {
+    TOOLTIP: '.tooltip',
+    TOOLTIP_INNER: '.tooltip-inner',
+    ARROW: '.arrow'
+  };
+  var Trigger = {
+    HOVER: 'hover',
+    FOCUS: 'focus',
+    CLICK: 'click',
+    MANUAL: 'manual'
+    /**
+     * ------------------------------------------------------------------------
+     * Class Definition
+     * ------------------------------------------------------------------------
+     */
 
   $(document).on(Event$5.CLICK_DATA_API, Selector$5.DATA_TOGGLE, function (event) {
     var _this10 = this;
@@ -28849,6 +28907,34 @@ if(false) {}
       this._setListeners();
     } // Getters
 
+        $(this.element).trigger(this.constructor.Event.INSERTED);
+        this._popper = new Popper(this.element, tip, {
+          placement: attachment,
+          modifiers: {
+            offset: this._getOffset(),
+            flip: {
+              behavior: this.config.fallbackPlacement
+            },
+            arrow: {
+              element: Selector$6.ARROW
+            },
+            preventOverflow: {
+              boundariesElement: this.config.boundary
+            }
+          },
+          onCreate: function onCreate(data) {
+            if (data.originalPlacement !== data.placement) {
+              _this._handlePopperPlacementChange(data);
+            }
+          },
+          onUpdate: function onUpdate(data) {
+            return _this._handlePopperPlacementChange(data);
+          }
+        });
+        $(tip).addClass(ClassName$6.SHOW); // If this is a touch-enabled device we add extra
+        // empty mouseover listeners to the body's immediate children;
+        // only needed because of broken event delegation on iOS
+        // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
     var _proto = Tooltip.prototype;
 
@@ -29359,6 +29445,8 @@ if(false) {}
       if (tip.getAttribute('x-placement') !== null) {
         return;
       }
+    } // Static
+    ;
 
       $(tip).removeClass(ClassName$6.FADE);
       this.config.animation = false;
@@ -29823,8 +29911,11 @@ if(false) {}
 
         this._clear();
 
-        return;
+        if (isActiveTarget) {
+          this._activate(this._targets[i]);
+        }
       }
+    };
 
       var offsetLength = this._offsets.length;
 
@@ -31870,7 +31961,7 @@ exports.push([module.i, "@import url(http://fonts.googleapis.com/css?family=Mont
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
 // module
-exports.push([module.i, "body {\n    font-family: 'Montserrat', sans-serif;\n}\n\np {\n    font-family: 'Roboto', sans-serif;\n    padding: 0;\n    margin: 0;\n}\n\n.p {\n    font-family: 'Roboto', sans-serif;\n    padding: 0;\n    margin: 0;\n}\n\n.wrapper {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 10px;\n    grid-auto-rows: minmax(100px, auto);\n}\n\n.icon:hover {\n    fill-opacity: 0;\n}\n\n.logo {\n    width: 80%;\n}\n\n#icon_search {\n    width: 50px;\n}\n\n#icon_account {\n    width: 40px;\n    margin-left: 20px;\n    margin-right: 20px;\n    margin-bottom: 2px;\n}\n\n#icon_cart {\n    width: 35px;\n    margin-bottom: 2px;\n}\n\n.menu {\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n}\n\n.image {\n    width: 80%;\n    margin: auto auto;\n}\n\n.producer-logo {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin: 20px;\n}\n\n\n/* Histoire */\n\n.test {\n    background-color: #a62b35;\n    color: white;\n}\n\n.btn-history {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    background-color: white;\n    color: #a62b35;\n    border: none;\n}\n\np.box {\n    margin: 50px;\n}\n\n.counter {\n    padding-top: 50px;\n    padding-right: 50px;\n    padding-left: 50px;\n}\n\n\n/* Footer */\n\n#img-logo {\n    margin-left: 25px;\n}\n\n.text-muted {\n    color: black !important;\n}\n\n.card {\n    border: none;\n}\n\n.card-group {\n    padding-top: 50px;\n}\n\n.card-img-top {\n    height: 350px;\n}\n\n.btn-danger {\n    background-color: #953640 !important;\n    border-color: #953640 !important;\n    color: aliceblue !important;\n}\n\n.page-footer {\n    background-color: #2B2B2B;\n    color: #CCBE9F;\n    font-family: 'Roboto', sans-serif;\n}\n\na.afooter {\n    color: #CCBE9F !important;\n}\n\n.cls-1 {\n    fill: #CCBE9F;\n}\n\n.image-footer {\n    width: 20%;\n}\n\n.footer-size {\n    font-size: 10px;\n}\n\n.footer-col {\n    margin-left: 5px;\n}\n\n.adresse-size {\n    font-size: 11px;\n    line-height: 11px;\n}\n\n\n/* Product page */\n\n.roadMap {\n    white-space: nowrap;\n}\n\n.arrow {\n    width: 2.5%;\n}\n\n.bottleImg {\n    width: 100%;\n    height: auto;\n    margin: auto;\n}\n\n.price-ht-font {\n    font-size: 10px;\n}\n\n.article-font {\n    font-size: 12px;\n}\n\n.nav-pills .nav-link.active,\n.nav-pills .show>.nav-link {\n    color: #2B2B2B;\n    background-color: #CCBE9F;\n}\n\n.pills {\n    color: #f2ebda;\n}\n\n\n/* CONTACT */\n\n.contact-form {\n    background: #2B2B2B;\n    margin-top: 10%;\n    margin-bottom: 5%;\n    width: 70%;\n}\n\n.contact-form .form-control {\n    border-radius: 25;\n}\n\n.contact-image {\n    text-align: center;\n}\n\n.contact-image img {\n    border-radius: 25;\n    width: 11%;\n    margin-top: -3%;\n    -webkit-transform: rotate(29deg);\n            transform: rotate(29deg);\n}\n\n.contact-form form {\n    padding: 14%;\n}\n\n.contact-form form .row {\n    margin-bottom: -7%;\n}\n\n.contact-form h3 {\n    margin-bottom: 8%;\n    margin-top: -10%;\n    text-align: center;\n    color: white;\n}\n\n.contact-form .btnContact {\n    width: 50%;\n    border: none;\n    border-radius: 25px;\n    padding: 1.5%;\n    background: #dc3545;\n    font-weight: 600;\n    color: #fff;\n    cursor: pointer;\n}\n\n.btnContactSubmit {\n    width: 50%;\n    padding: 1.5%;\n    color: #fff;\n    border: none;\n    cursor: pointer;\n}\n\n.icon_display img {\n    width: 50px;\n}\n\n#tri-produit {\n    margin-top: 50px;\n}\n\n.number_results {\n    padding-top: 15px;\n}\n\n#weekproduct {\n    width: 10rem;\n}\n\n.card-img-top {\n    width: 10rem;\n}\n\n.btn-filter {\n    border-color: grey;\n    border-style: solid;\n    border-width: 0.5px;\n    border-radius: 25px;\n}", ""]);
+exports.push([module.i, "body {\n    font-family: 'Montserrat', sans-serif;\n}\n\np {\n    font-family: 'Roboto', sans-serif;\n    padding: 0;\n    margin: 0;\n}\n\n.wrapper {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 10px;\n    grid-auto-rows: minmax(100px, auto);\n}\n\n.icon:hover {\n    fill-opacity: 0;\n}\n\n.logo {\n    width: 80%;\n}\n\n#icon_search {\n    width: 50px;\n}\n\n#icon_account {\n    width: 40px;\n    margin-left: 20px;\n    margin-right: 20px;\n    margin-bottom: 2px;\n}\n\n#icon_cart {\n    width: 35px;\n    margin-bottom: 2px;\n}\n\n.menu {\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n}\n\n.image {\n    width: 80%;\n    margin: auto auto;\n}\n\n.producer-logo {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin: 20px;\n}\n\n\n/* Histoire */\n\n.test {\n    background-color: #a62b35;\n    color: white;\n}\n\n.btn-history {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    background-color: white;\n    color: #a62b35;\n    border: none;\n}\n\np.box {\n    margin: 50px;\n}\n\n.counter {\n    padding-top: 50px;\n    padding-right: 50px;\n    padding-left: 50px;\n}\n\n\n/* Footer */\n\n#img-logo {\n    margin-left: 25px;\n}\n\n.text-muted {\n    color: black !important;\n}\n\n.card {\n    border: none;\n}\n\n.card-group {\n    padding-top: 50px;\n}\n\n.card-img-top {\n    height: 350px;\n}\n\n.btn-danger {\n    background-color: #953640 !important;\n    border-color: #953640 !important;\n    color: aliceblue !important;\n}\n\n.page-footer {\n    background-color: #2B2B2B;\n    color: #CCBE9F;\n    font-family: 'Roboto', sans-serif;\n}\n\na.afooter {\n    color: #CCBE9F !important;\n}\n\n.cls-1 {\n    fill: #CCBE9F;\n\n}\n\n.image-footer {\n    width: 20%;\n}\n\n.footer-size {\n    font-size: 10px;\n}\n\n.footer-col {\n    margin-left: 5px;\n}\n\n.adresse-size {\n    font-size: 11px;\n    line-height: 11px;\n}\n\n\n/* Product page */\n\n.roadMap {\n    white-space: nowrap;\n}\n\n.arrow {\n    width: 2.5%;\n}\n\n.bottleImg {\n    width: 100%;\n    height: auto;\n    margin: auto;\n}\n\n\n/* CONTACT */\n\n.contact-form {\n    background: #2B2B2B;\n    margin-top: 10%;\n    margin-bottom: 5%;\n    width: 70%;\n}\n\n.contact-form .form-control {\n    border-radius: 25;\n}\n\n.contact-image {\n    text-align: center;\n}\n\n.contact-image img {\n    border-radius: 25;\n    width: 11%;\n    margin-top: -3%;\n    -webkit-transform: rotate(29deg);\n            transform: rotate(29deg);\n}\n\n.contact-form form {\n    padding: 14%;\n}\n\n.contact-form form .row {\n    margin-bottom: -7%;\n}\n\n.contact-form h3 {\n    margin-bottom: 8%;\n    margin-top: -10%;\n    text-align: center;\n    color: white;\n}\n\n.contact-form .btnContact {\n    width: 50%;\n    border: none;\n    border-radius: 25px;\n    padding: 1.5%;\n    background: #dc3545;\n    font-weight: 600;\n    color: #fff;\n    cursor: pointer;\n}\n\n.btnContactSubmit {\n    width: 50%;\n    padding: 1.5%;\n    color: #fff;\n    border: none;\n    cursor: pointer;\n}\n\n.icon_display img {\n    width: 50px;\n}\n\n#tri-produit {\n    margin-top: 50px;\n}\n\n.number_results {\n    padding-top: 15px;\n}\n\n#weekproduct {\n    width: 10rem;\n}\n\n.card-img-top {\n    width: 10rem;\n}\n\n.btn-filter {\n    border-color: grey;\n    border-style: solid;\n    border-width: 0.5px;\n    border-radius: 25px;\n\n}\n.price-ht-font {\n    font-size: 10px;\n}\n\n.article-font {\n    font-size: 12px;\n}\n#cart-produit-img{\n    width : 68px;\n    height : 150px;\n}\n.btn-panier-2{\n    border-color: grey;\n    border-style: solid;\n    border-width: 1px;\n\n}\n.action-btn{\nmargin-bottom: 25px;\n}", ""]);
 
 // exports
 
@@ -34747,6 +34838,7 @@ return Sizzle;
 
 })( window );
 
+// One-time assignments
 
 
 jQuery.find = Sizzle;
@@ -34760,6 +34852,12 @@ jQuery.isXMLDoc = Sizzle.isXML;
 jQuery.contains = Sizzle.contains;
 jQuery.escapeSelector = Sizzle.escape;
 
+// Support: Webkit<537.32 - Safari 6.0.3/Chrome 25 (fixed in Chrome 27)
+// Detached nodes confoundingly follow *each other*
+support.sortDetached = assert(function( el ) {
+	// Should return 1, but returns 4 (following)
+	return el.compareDocumentPosition( document.createElement("fieldset") ) & 1;
+});
 
 
 
@@ -34804,6 +34902,11 @@ function nodeName( elem, name ) {
 var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
 
 
+	for ( ; n; n = n.nextSibling ) {
+		if ( n.nodeType === 1 && n !== elem ) {
+			matched.push( n );
+		}
+	}
 
 // Implement the identical functionality for filter and not
 function winnow( elements, qualifier, not ) {
@@ -35186,6 +35289,10 @@ jQuery.each( {
 var rnothtmlwhite = ( /[^\x20\t\r\n\f]+/g );
 
 
+			// Remove duplicates
+			if ( !guaranteedUnique[ name ] ) {
+				jQuery.uniqueSort( matched );
+			}
 
 // Convert String-formatted options into Object-formatted ones
 function createOptions( options ) {
@@ -35412,6 +35519,9 @@ jQuery.Callbacks = function( options ) {
 	return self;
 };
 
+					// Run callback and check for early termination
+					if ( list[ firingIndex ].apply( memory[ 0 ], memory[ 1 ] ) === false &&
+						options.stopOnFalse ) {
 
 function Identity( v ) {
 	return v;
@@ -36151,6 +36261,9 @@ var dataPriv = new Data();
 
 var dataUser = new Data();
 
+	if ( rbrace.test( data ) ) {
+		return JSON.parse( data );
+	}
 
 
 //	Implementation Summary
@@ -36321,6 +36434,11 @@ jQuery.fn.extend( {
 	}
 } );
 
+			// Add a progress sentinel to prevent the fx queue from being
+			// automatically dequeued
+			if ( type === "fx" ) {
+				queue.unshift( "inprogress" );
+			}
 
 jQuery.extend( {
 	queue: function( elem, type, data ) {
@@ -37741,6 +37859,12 @@ jQuery.fn.extend( {
 	}
 } );
 
+		if ( e && !this.isSimulated ) {
+			e.preventDefault();
+		}
+	},
+	stopPropagation: function() {
+		var e = this.originalEvent;
 
 var
 
@@ -38989,8 +39113,30 @@ jQuery.fx = Tween.prototype.init;
 // Back compat <1.8 extension point
 jQuery.fx.step = {};
 
+// These hooks are used by animate to expand properties
+jQuery.each( {
+	margin: "",
+	padding: "",
+	border: "Width"
+}, function( prefix, suffix ) {
+	jQuery.cssHooks[ prefix + suffix ] = {
+		expand: function( value ) {
+			var i = 0,
+				expanded = {},
+
+				// Assumes a single number if not a string
+				parts = typeof value === "string" ? value.split( " " ) : [ value ];
+
+			for ( ; i < 4; i++ ) {
+				expanded[ prefix + cssExpand[ i ] + suffix ] =
+					parts[ i ] || parts[ i - 2 ] || parts[ 0 ];
+			}
 
 
+	if ( prefix !== "margin" ) {
+		jQuery.cssHooks[ prefix + suffix ].set = setPositiveNumber;
+	}
+} );
 
 var
 	fxNow, inProgress,
@@ -40578,6 +40724,8 @@ var nonce = Date.now();
 
 var rquery = ( /\?/ );
 
+		jQuery.event.trigger( e, null, elem );
+	}
 
 
 // Cross-browser xml parsing
@@ -41991,6 +42139,10 @@ jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 
 
 
+		// Delegate to script
+		return "script";
+	}
+} );
 
 // Support: Safari 8 only
 // In Safari 8 documents created via document.implementation.createHTMLDocument
@@ -46813,6 +46965,75 @@ var __assign=function(){return(__assign=Object.assign||function(e){for(var a,s=1
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CGV.vue?vue&type=template&id=08cf7b77&":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CGV.vue?vue&type=template&id=08cf7b77& ***!
+  \******************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("p", [
+    _vm._v(
+      "Conditions générales de vente\n1. Droit de révocation et réclamations au sujet de la marchandise  \nLa commande, quel que soit le moyen de paiement choisi, est ferme et définitive. L’acheteur ne dispose d’aucun droit de rétractation ou de révocation de sa commande et ne peut donc restituer la marchandise commandée. Pour le surplus, toute réclamation concernant la marchandise doit être faite par écrit auprès de Elie Gazzar SA dans les 8 jours dès la livraison. \n\n2. Goût de bouchon\nElie Gazzar S.A. calcule les prix de vente de ses vins au plus juste. Ceux-ci n'incluent pas de marge pour les bouteilles présentant un éventuel goût de bouchon. Aussi, un cas isolé de goût de bouchon ne peut donner droit à aucune prétention de la part du client.\n\n3. Interdiction de vente à des mineurs\nPar son acceptation des conditions générales, le client certifie qu’il est âgé d’au moins 18 ans. En effet, est prohibée expressément par la loi la vente de spiritueux, d’apéritifs et d’alcopops aux personnes de moins de 18 ans, ainsi que la vente de vins, cidres et bières aux moins de 16 ans.\n\n4. Cas spécial des vins vendus en primeurs\nLa commande ne sera honorée que si elle est payée d’avance dans les trente jours.\n\nEn raison de la modification du paiement de la TVA à l’administration fédérale des Contributions, celle-ci se fait dès la fin de 2009 lors de l’encaissement chaque trimestre.\n\nSi, sans la faute d’Elie Gazzar SA, les vins vendus en primeurs commandées à ses fournisseurs ne lui sont pas livrées, le client n’aura droit qu’au remboursement du prix qu’il a payé, à l’exclusion de tous autres dommages intérêts.\n\n5. Moment du paiement\nElie Gazzar SA exige systématiquement de ses nouveaux clients le paiement par avance, c’est-à-dire avant la livraison. Dans les autres cas, sauf convention contraire entre les parties, le délai de paiement est de trente jours net dès la commande.\n\n6. Participation aux frais de livraison\nFr. 20.- jusqu'à 12 bouteilles de 75 cl.\nFr. 30.- pour 24 bouteilles de 75 cl.\n\nDès 36 bouteilles de 75 cl., la livraison est gratuite dans toute la Suisse.\n\n7. Dispositions en matière de protection des données\nEn s’inscrivant sur le site www.gazzar.ch, le client consent à ce que les données personnelles transmises soient enregistrées et utilisées afin qu’il reçoive des informations de nature publicitaire ou autre de la part de Elie Gazzar SA.\n\nElie Gazzar SA transmet les données personnelles à des tiers uniquement dans la mesure où cela est indispensable pour la bonne exécution de la commande (transmission aux partenaires logistiques pour la livraison des commandes) ou du paiement (transmission à une société de recouvrement en cas de défaut de paiement).\n\nLes informations sont traitées avec la plus grande confidentialité et conformément aux règles de la bonne foi. Le site www.gazzar.ch est sécurisé (certificat de sécurité SSL). Elie Gazzar SA décline toutefois toute responsabilité concernant la sécurité des données transmises par Internet.\n\nConformément à la Loi sur la protection des données, le client dispose d’un droit d’accès, de rectification et d’opposition aux données le concernant. Pour cela, il lui suffit de s’adresser à Elie Gazzar SA.\n    "
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CarteProduit.vue?vue&type=template&id=784ef68f&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CarteProduit.vue?vue&type=template&id=784ef68f& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card card-custom mx-2 mb-3" }, [
+      _c("img", {
+        staticClass: "card-img-top",
+        attrs: {
+          src: "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
+          alt: "vin1"
+        }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "card-body", attrs: { id: "weekproduct" } })
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CarteSelectionSemaine.vue?vue&type=template&id=17996818&":
 /*!************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CarteSelectionSemaine.vue?vue&type=template&id=17996818& ***!
@@ -46844,11 +47065,7 @@ var staticRenderFns = [
         }
       }),
       _vm._v(" "),
-      _c("div", { staticClass: "card-body", attrs: { id: "weekproduct" } }, [
-        _c("h5", { staticClass: "card-title" }, [_vm._v("Nom du vin")]),
-        _vm._v(" "),
-        _c("p", { staticClass: "card-text" }, [_vm._v("Spécificités")])
-      ])
+      _c("div", { staticClass: "card-body", attrs: { id: "weekproduct" } })
     ])
   }
 ]
@@ -47457,6 +47674,185 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Panier.vue?vue&type=template&id=def28278&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Panier.vue?vue&type=template&id=def28278& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("h2", [_vm._v("Panier")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "table-responsive-sm" }, [
+        _c("table", { staticClass: "table" }, [
+          _c("thead", [
+            _c("tr", [
+              _c("th", { attrs: { scope: "col" } }, [_vm._v("Produit")]),
+              _vm._v(" "),
+              _c("th", { attrs: { scope: "col" } }),
+              _vm._v(" "),
+              _c("th", { attrs: { scope: "col" } }, [
+                _vm._v("Quantité / Prix")
+              ]),
+              _vm._v(" "),
+              _c("th", { attrs: { scope: "col" } }, [_vm._v("Sous total")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("tbody", [
+            _c("tr", [
+              _c("th", { attrs: { scope: "row" } }, [
+                _c("div", { staticClass: "card card-custom mx-2 mb-3" }, [
+                  _c("img", {
+                    staticClass: "card-img-top",
+                    attrs: {
+                      src:
+                        "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
+                      alt: "vin1",
+                      id: "cart-produit-img"
+                    }
+                  })
+                ])
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c(
+                  "div",
+                  { staticClass: "card-body", attrs: { id: "weekproduct" } },
+                  [
+                    _c("div", { staticClass: "produit-descr" }, [
+                      _c("p", { staticClass: "card-title" }, [_vm._v("nom")]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-title" }, [
+                        _vm._v("domaine")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text" }, [
+                        _vm._v("millesime")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text" }, [_vm._v("region")]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text" }, [_vm._v("pays")]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "card-text" }, [_vm._v("prix")]),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-white btn-rounded btn-sm",
+                          attrs: { type: "button", href: "#" }
+                        },
+                        [_vm._v("Supprimer")]
+                      )
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("td", [
+                _c("form", [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "number",
+                        id: "formGroupExampleInput",
+                        placeholder: "Quantité"
+                      }
+                    })
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("td", [_vm._v("40 chf")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td"),
+              _vm._v(" "),
+              _c("td"),
+              _vm._v(" "),
+              _c("td", [_vm._v("Sout total")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("X")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td"),
+              _vm._v(" "),
+              _c("td"),
+              _vm._v(" "),
+              _c("td", [_vm._v("TVA & autres taxes")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("X")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td"),
+              _vm._v(" "),
+              _c("td"),
+              _vm._v(" "),
+              _c("td", [_vm._v("Total HT")]),
+              _vm._v(" "),
+              _c("td", [_vm._v("X")])
+            ]),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td"),
+              _vm._v(" "),
+              _c("td"),
+              _vm._v(" "),
+              _c("td", [
+                _c("h4", [_vm._v("Total de la commande")]),
+                _c("br"),
+                _vm._v("(Hors frais de livraison)")
+              ]),
+              _vm._v(" "),
+              _c("td", [_c("h4", [_vm._v("X")])])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "action-btn" }, [
+          _c("div", { staticClass: "row mt-5 justify-content-center" }, [
+            _c("div", { staticClass: "filters mx-auto" }, [
+              _c("button", { staticClass: "btn btn-white btn-panier-2" }, [
+                _vm._v("Continuer mes achats")
+              ]),
+              _vm._v(" "),
+              _c("button", { staticClass: "btn btn-danger btn-panier" }, [
+                _vm._v("Passer commande")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProductFilter.vue?vue&type=template&id=6c2bf56c&":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ProductFilter.vue?vue&type=template&id=6c2bf56c& ***!
@@ -47862,6 +48258,220 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("span"),
               _vm._v(" "),
+              _c("p", { staticClass: "mt-2 h5" }, [
+                _vm._v("CHF "),
+                _c("b", [_vm._v("17.40")])
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "price-ht-font" }, [
+                _c("i", [
+                  _vm._v("("),
+                  _c("span", [_vm._v("13")]),
+                  _vm._v(" CHF hors TVA)")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("span"),
+              _vm._v(" "),
+              _c("span"),
+              _vm._v(" "),
+              _c(
+                "p",
+                { staticClass: "font-weight-light mt-2 mb-2 article-font" },
+                [_vm._v(" Numéro d'article : HFIWOMSH")]
+              )
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", { staticClass: "mt-1 mb-1" }, [
+              _c("span", [
+                _c("label", [_vm._v("VARIANTES:")]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-outline-secondary btn-sm disabled",
+                    attrs: {
+                      href: "#",
+                      role: "button",
+                      "aria-disabled": "true"
+                    }
+                  },
+                  [_vm._v("2012")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-outline-secondary btn-sm active",
+                    attrs: {
+                      href: "#",
+                      role: "button",
+                      "aria-disabled": "true"
+                    }
+                  },
+                  [_vm._v("2015")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-outline-secondary btn-sm disabled",
+                    attrs: {
+                      href: "#",
+                      role: "button",
+                      "aria-disabled": "true"
+                    }
+                  },
+                  [_vm._v("2017")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", { staticClass: "mt-1 mb-1" }, [
+              _c("label", [_vm._v("QUANTITÉS:")]),
+              _vm._v(" "),
+              _c("div", {}, [
+                _c("div", { staticClass: "input-group" }, [
+                  _c("span", { staticClass: "input-group-btn" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "quantity-left-minus btn btn-outline-secondary btn-sm",
+                        attrs: {
+                          type: "button",
+                          "data-type": "minus",
+                          "data-field": ""
+                        }
+                      },
+                      [
+                        _c(
+                          "span",
+                          { staticClass: "glyphicon glyphicon-minus" },
+                          [_vm._v("-")]
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("input", {
+                    staticClass: "form-control input-number form-control-sm",
+                    attrs: {
+                      type: "text",
+                      id: "quantity",
+                      name: "quantity",
+                      value: "1",
+                      min: "1",
+                      max: "20"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "input-group-btn" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass:
+                          "quantity-right-plus btn btn-outline-secondary btn-sm",
+                        attrs: {
+                          type: "button",
+                          "data-type": "plus",
+                          "data-field": ""
+                        }
+                      },
+                      [
+                        _c(
+                          "span",
+                          { staticClass: "glyphicon glyphicon-plus" },
+                          [_vm._v("+")]
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-outline-danger btn-sm ml-4 mr-4",
+                      attrs: { type: "button" }
+                    },
+                    [_vm._v("Ajouter au panier")]
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "nav flex-column nav-pills",
+          attrs: {
+            id: "v-pills-tab",
+            role: "tablist",
+            "aria-orientation": "vertical"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass: "nav-link active",
+              attrs: {
+                id: "v-pills-home-tab",
+                "data-toggle": "pill",
+                href: "#v-pills-home",
+                role: "tab",
+                "aria-controls": "v-pills-home",
+                "aria-selected": "true"
+              }
+            },
+            [_vm._v("Home")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "nav-link",
+              attrs: {
+                id: "v-pills-profile-tab",
+                "data-toggle": "pill",
+                href: "#v-pills-profile",
+                role: "tab",
+                "aria-controls": "v-pills-profile",
+                "aria-selected": "false"
+              }
+            },
+            [_vm._v("Profile")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "nav-link",
+              attrs: {
+                id: "v-pills-messages-tab",
+                "data-toggle": "pill",
+                href: "#v-pills-messages",
+                role: "tab",
+                "aria-controls": "v-pills-messages",
+                "aria-selected": "false"
+              }
+            },
+            [_vm._v("Messages")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "col mt-5" }, [
+            _c("div", [
+              _c("h4", [_vm._v("Château Cambon la Pelouse - 2015")]),
+              _vm._v(" "),
+              _c("span"),
+              _vm._v(" "),
               _c("p", { staticClass: "mt-3 mb-3 h5" }, [
                 _vm._v("CHF "),
                 _c("b", [_vm._v("17.40  ")]),
@@ -48053,137 +48663,78 @@ var staticRenderFns = [
           _c(
             "div",
             {
-              staticClass: "nav flex-column nav-pills text-info",
+              staticClass: "nav-link",
               attrs: {
-                id: "v-pills-tab",
-                role: "tablist",
-                "aria-orientation": "vertical"
+                id: "v-pills-settings-tab",
+                "data-toggle": "pill",
+                href: "#v-pills-settings",
+                role: "tab",
+                "aria-controls": "v-pills-settings",
+                "aria-selected": "false"
               }
             },
-            [
-              _c(
-                "a",
-                {
-                  staticClass: "nav-link text-right pills active",
-                  attrs: {
-                    id: "v-pills-home-tab",
-                    "data-toggle": "pill",
-                    href: "#v-pills-home",
-                    role: "tab",
-                    "aria-controls": "v-pills-home",
-                    "aria-selected": "true"
-                  }
-                },
-                [_vm._v("Description")]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "nav-link text-right pills",
-                  attrs: {
-                    id: "v-pills-profile-tab",
-                    "data-toggle": "pill",
-                    href: "#v-pills-profile",
-                    role: "tab",
-                    "aria-controls": "v-pills-profile",
-                    "aria-selected": "false"
-                  }
-                },
-                [_vm._v("Informations")]
-              )
-            ]
+            [_vm._v("Settings")]
           )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-8" }, [
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "tab-content", attrs: { id: "v-pills-tabContent" } },
+        [
           _c(
             "div",
-            { staticClass: "tab-content", attrs: { id: "v-pills-tabContent" } },
-            [
-              _c(
-                "div",
-                {
-                  staticClass: "tab-pane fade show active text-justify",
-                  attrs: {
-                    id: "v-pills-home",
-                    role: "tabpanel",
-                    "aria-labelledby": "v-pills-home-tab"
-                  }
-                },
-                [
-                  _c("p", [
-                    _vm._v(
-                      "Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat."
-                    )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "tab-pane fade",
-                  attrs: {
-                    id: "v-pills-profile",
-                    role: "tabpanel",
-                    "aria-labelledby": "v-pills-profile-tab"
-                  }
-                },
-                [
-                  _c("table", { staticClass: "p table" }, [
-                    _c("tr", [
-                      _c("td", [_vm._v("Teneur en alcool")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("13.5°")])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Cotation")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("WeinWisser : 18/20")])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Classement")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("Cru Bourgeois supérieur")])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Apogée")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("2022 - 2038")])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Producteur")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("Château Cambon la Pelouse")])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Cépage(s)")]),
-                      _vm._v(" "),
-                      _c("td", [
-                        _vm._v(
-                          "53% Merlot, 32.7% Cabernet Sauvignon, 12.3% Cabernet Franc, 2% Petit Verdot"
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", [_vm._v("Type")]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v("Vin rouge")])
-                    ])
-                  ])
-                ]
-              )
-            ]
+            {
+              staticClass: "tab-pane fade show active",
+              attrs: {
+                id: "v-pills-home",
+                role: "tabpanel",
+                "aria-labelledby": "v-pills-home-tab"
+              }
+            },
+            [_vm._v("Home")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "v-pills-profile",
+                role: "tabpanel",
+                "aria-labelledby": "v-pills-profile-tab"
+              }
+            },
+            [_vm._v("Profile")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "v-pills-messages",
+                role: "tabpanel",
+                "aria-labelledby": "v-pills-messages-tab"
+              }
+            },
+            [_vm._v("Message")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "tab-pane fade",
+              attrs: {
+                id: "v-pills-settings",
+                role: "tabpanel",
+                "aria-labelledby": "v-pills-settings-tab"
+              }
+            },
+            [_vm._v("Setting")]
           )
-        ])
-      ])
+        ]
+      )
     ])
   }
 ]
@@ -60424,11 +60975,122 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('contact-form', __webpack_r
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('nav-product-bar', __webpack_require__(/*! ./components/NavProductBar.vue */ "./resources/js/components/NavProductBar.vue")["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('product-page', __webpack_require__(/*! ./components/ProductPage.vue */ "./resources/js/components/ProductPage.vue")["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('carte-produit', __webpack_require__(/*! ./components/CarteProduit.vue */ "./resources/js/components/CarteProduit.vue")["default"]); //CGV 
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('cgv-texte', __webpack_require__(/*! ./components/CGV.vue */ "./resources/js/components/CGV.vue")["default"]); //Panier 
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('panier-produit', __webpack_require__(/*! ./components/Panier.vue */ "./resources/js/components/Panier.vue")["default"]);
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app'
 });
 window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 window.JQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+/***/ }),
+
+/***/ "./resources/js/components/CGV.vue":
+/*!*****************************************!*\
+  !*** ./resources/js/components/CGV.vue ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CGV_vue_vue_type_template_id_08cf7b77___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CGV.vue?vue&type=template&id=08cf7b77& */ "./resources/js/components/CGV.vue?vue&type=template&id=08cf7b77&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _CGV_vue_vue_type_template_id_08cf7b77___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CGV_vue_vue_type_template_id_08cf7b77___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CGV.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CGV.vue?vue&type=template&id=08cf7b77&":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/CGV.vue?vue&type=template&id=08cf7b77& ***!
+  \************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CGV_vue_vue_type_template_id_08cf7b77___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CGV.vue?vue&type=template&id=08cf7b77& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CGV.vue?vue&type=template&id=08cf7b77&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CGV_vue_vue_type_template_id_08cf7b77___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CGV_vue_vue_type_template_id_08cf7b77___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CarteProduit.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/CarteProduit.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CarteProduit_vue_vue_type_template_id_784ef68f___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CarteProduit.vue?vue&type=template&id=784ef68f& */ "./resources/js/components/CarteProduit.vue?vue&type=template&id=784ef68f&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _CarteProduit_vue_vue_type_template_id_784ef68f___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CarteProduit_vue_vue_type_template_id_784ef68f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CarteProduit.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CarteProduit.vue?vue&type=template&id=784ef68f&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/CarteProduit.vue?vue&type=template&id=784ef68f& ***!
+  \*********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CarteProduit_vue_vue_type_template_id_784ef68f___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CarteProduit.vue?vue&type=template&id=784ef68f& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CarteProduit.vue?vue&type=template&id=784ef68f&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CarteProduit_vue_vue_type_template_id_784ef68f___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CarteProduit_vue_vue_type_template_id_784ef68f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -60442,17 +61104,15 @@ window.JQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jq
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CarteSelectionSemaine_vue_vue_type_template_id_17996818___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CarteSelectionSemaine.vue?vue&type=template&id=17996818& */ "./resources/js/components/CarteSelectionSemaine.vue?vue&type=template&id=17996818&");
-/* harmony import */ var _CarteSelectionSemaine_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CarteSelectionSemaine.vue?vue&type=script&lang=js& */ "./resources/js/components/CarteSelectionSemaine.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-
-
+var script = {}
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _CarteSelectionSemaine_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
   _CarteSelectionSemaine_vue_vue_type_template_id_17996818___WEBPACK_IMPORTED_MODULE_0__["render"],
   _CarteSelectionSemaine_vue_vue_type_template_id_17996818___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -60466,20 +61126,6 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/CarteSelectionSemaine.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/CarteSelectionSemaine.vue?vue&type=script&lang=js&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/components/CarteSelectionSemaine.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CarteSelectionSemaine_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CarteSelectionSemaine.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CarteSelectionSemaine.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CarteSelectionSemaine_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -60761,6 +61407,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NavProductBar_vue_vue_type_template_id_2573c24c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_NavProductBar_vue_vue_type_template_id_2573c24c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Panier.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/Panier.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Panier_vue_vue_type_template_id_def28278___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Panier.vue?vue&type=template&id=def28278& */ "./resources/js/components/Panier.vue?vue&type=template&id=def28278&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Panier_vue_vue_type_template_id_def28278___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Panier_vue_vue_type_template_id_def28278___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Panier.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Panier.vue?vue&type=template&id=def28278&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/Panier.vue?vue&type=template&id=def28278& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Panier_vue_vue_type_template_id_def28278___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Panier.vue?vue&type=template&id=def28278& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Panier.vue?vue&type=template&id=def28278&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Panier_vue_vue_type_template_id_def28278___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Panier_vue_vue_type_template_id_def28278___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

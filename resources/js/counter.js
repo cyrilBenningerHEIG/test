@@ -31,8 +31,6 @@ $(document).ready(function() {
         if (quantity > 0) {
             $('#quantity').val(quantity - 1);
         }
-
     });
-
 
 });
