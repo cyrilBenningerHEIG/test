@@ -10,6 +10,12 @@ p {
     margin: 0;
 }
 
+.p {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -167,6 +173,16 @@ a.afooter {
 
 .article-font {
     font-size: 12px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #2B2B2B;
+    background-color: #CCBE9F;
+}
+
+.pills {
+    color: #f2ebda;
 }
 
 

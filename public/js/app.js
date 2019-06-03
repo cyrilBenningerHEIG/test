@@ -31870,7 +31870,7 @@ exports.push([module.i, "@import url(http://fonts.googleapis.com/css?family=Mont
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 
 // module
-exports.push([module.i, "body {\n    font-family: 'Montserrat', sans-serif;\n}\n\np {\n    font-family: 'Roboto', sans-serif;\n    padding: 0;\n    margin: 0;\n}\n\n.wrapper {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 10px;\n    grid-auto-rows: minmax(100px, auto);\n}\n\n.icon:hover {\n    fill-opacity: 0;\n}\n\n.logo {\n    width: 80%;\n}\n\n#icon_search {\n    width: 50px;\n}\n\n#icon_account {\n    width: 40px;\n    margin-left: 20px;\n    margin-right: 20px;\n    margin-bottom: 2px;\n}\n\n#icon_cart {\n    width: 35px;\n    margin-bottom: 2px;\n}\n\n.menu {\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n}\n\n.image {\n    width: 80%;\n    margin: auto auto;\n}\n\n.producer-logo {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin: 20px;\n}\n\n\n/* Histoire */\n\n.test {\n    background-color: #a62b35;\n    color: white;\n}\n\n.btn-history {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    background-color: white;\n    color: #a62b35;\n    border: none;\n}\n\np.box {\n    margin: 50px;\n}\n\n.counter {\n    padding-top: 50px;\n    padding-right: 50px;\n    padding-left: 50px;\n}\n\n\n/* Footer */\n\n#img-logo {\n    margin-left: 25px;\n}\n\n.text-muted {\n    color: black !important;\n}\n\n.card {\n    border: none;\n}\n\n.card-group {\n    padding-top: 50px;\n}\n\n.card-img-top {\n    height: 350px;\n}\n\n.btn-danger {\n    background-color: #953640 !important;\n    border-color: #953640 !important;\n    color: aliceblue !important;\n}\n\n.page-footer {\n    background-color: #2B2B2B;\n    color: #CCBE9F;\n    font-family: 'Roboto', sans-serif;\n}\n\na.afooter {\n    color: #CCBE9F !important;\n}\n\n.cls-1 {\n    fill: #CCBE9F;\n}\n\n.image-footer {\n    width: 20%;\n}\n\n.footer-size {\n    font-size: 10px;\n}\n\n.footer-col {\n    margin-left: 5px;\n}\n\n.adresse-size {\n    font-size: 11px;\n    line-height: 11px;\n}\n\n\n/* Product page */\n\n.roadMap {\n    white-space: nowrap;\n}\n\n.arrow {\n    width: 2.5%;\n}\n\n.bottleImg {\n    width: 100%;\n    height: auto;\n    margin: auto;\n}\n\n.price-ht-font {\n    font-size: 10px;\n}\n\n.article-font {\n    font-size: 12px;\n}\n\n\n/* CONTACT */\n\n.contact-form {\n    background: #2B2B2B;\n    margin-top: 10%;\n    margin-bottom: 5%;\n    width: 70%;\n}\n\n.contact-form .form-control {\n    border-radius: 25;\n}\n\n.contact-image {\n    text-align: center;\n}\n\n.contact-image img {\n    border-radius: 25;\n    width: 11%;\n    margin-top: -3%;\n    -webkit-transform: rotate(29deg);\n            transform: rotate(29deg);\n}\n\n.contact-form form {\n    padding: 14%;\n}\n\n.contact-form form .row {\n    margin-bottom: -7%;\n}\n\n.contact-form h3 {\n    margin-bottom: 8%;\n    margin-top: -10%;\n    text-align: center;\n    color: white;\n}\n\n.contact-form .btnContact {\n    width: 50%;\n    border: none;\n    border-radius: 25px;\n    padding: 1.5%;\n    background: #dc3545;\n    font-weight: 600;\n    color: #fff;\n    cursor: pointer;\n}\n\n.btnContactSubmit {\n    width: 50%;\n    padding: 1.5%;\n    color: #fff;\n    border: none;\n    cursor: pointer;\n}\n\n.icon_display img {\n    width: 50px;\n}\n\n#tri-produit {\n    margin-top: 50px;\n}\n\n.number_results {\n    padding-top: 15px;\n}\n\n#weekproduct {\n    width: 10rem;\n}\n\n.card-img-top {\n    width: 10rem;\n}\n\n.btn-filter {\n    border-color: grey;\n    border-style: solid;\n    border-width: 0.5px;\n    border-radius: 25px;\n}", ""]);
+exports.push([module.i, "body {\n    font-family: 'Montserrat', sans-serif;\n}\n\np {\n    font-family: 'Roboto', sans-serif;\n    padding: 0;\n    margin: 0;\n}\n\n.p {\n    font-family: 'Roboto', sans-serif;\n    padding: 0;\n    margin: 0;\n}\n\n.wrapper {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 10px;\n    grid-auto-rows: minmax(100px, auto);\n}\n\n.icon:hover {\n    fill-opacity: 0;\n}\n\n.logo {\n    width: 80%;\n}\n\n#icon_search {\n    width: 50px;\n}\n\n#icon_account {\n    width: 40px;\n    margin-left: 20px;\n    margin-right: 20px;\n    margin-bottom: 2px;\n}\n\n#icon_cart {\n    width: 35px;\n    margin-bottom: 2px;\n}\n\n.menu {\n    font-size: 20px;\n    font-family: 'Montserrat', sans-serif;\n}\n\n.image {\n    width: 80%;\n    margin: auto auto;\n}\n\n.producer-logo {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin: 20px;\n}\n\n\n/* Histoire */\n\n.test {\n    background-color: #a62b35;\n    color: white;\n}\n\n.btn-history {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    background-color: white;\n    color: #a62b35;\n    border: none;\n}\n\np.box {\n    margin: 50px;\n}\n\n.counter {\n    padding-top: 50px;\n    padding-right: 50px;\n    padding-left: 50px;\n}\n\n\n/* Footer */\n\n#img-logo {\n    margin-left: 25px;\n}\n\n.text-muted {\n    color: black !important;\n}\n\n.card {\n    border: none;\n}\n\n.card-group {\n    padding-top: 50px;\n}\n\n.card-img-top {\n    height: 350px;\n}\n\n.btn-danger {\n    background-color: #953640 !important;\n    border-color: #953640 !important;\n    color: aliceblue !important;\n}\n\n.page-footer {\n    background-color: #2B2B2B;\n    color: #CCBE9F;\n    font-family: 'Roboto', sans-serif;\n}\n\na.afooter {\n    color: #CCBE9F !important;\n}\n\n.cls-1 {\n    fill: #CCBE9F;\n}\n\n.image-footer {\n    width: 20%;\n}\n\n.footer-size {\n    font-size: 10px;\n}\n\n.footer-col {\n    margin-left: 5px;\n}\n\n.adresse-size {\n    font-size: 11px;\n    line-height: 11px;\n}\n\n\n/* Product page */\n\n.roadMap {\n    white-space: nowrap;\n}\n\n.arrow {\n    width: 2.5%;\n}\n\n.bottleImg {\n    width: 100%;\n    height: auto;\n    margin: auto;\n}\n\n.price-ht-font {\n    font-size: 10px;\n}\n\n.article-font {\n    font-size: 12px;\n}\n\n.nav-pills .nav-link.active,\n.nav-pills .show>.nav-link {\n    color: #2B2B2B;\n    background-color: #CCBE9F;\n}\n\n.pills {\n    color: #f2ebda;\n}\n\n\n/* CONTACT */\n\n.contact-form {\n    background: #2B2B2B;\n    margin-top: 10%;\n    margin-bottom: 5%;\n    width: 70%;\n}\n\n.contact-form .form-control {\n    border-radius: 25;\n}\n\n.contact-image {\n    text-align: center;\n}\n\n.contact-image img {\n    border-radius: 25;\n    width: 11%;\n    margin-top: -3%;\n    -webkit-transform: rotate(29deg);\n            transform: rotate(29deg);\n}\n\n.contact-form form {\n    padding: 14%;\n}\n\n.contact-form form .row {\n    margin-bottom: -7%;\n}\n\n.contact-form h3 {\n    margin-bottom: 8%;\n    margin-top: -10%;\n    text-align: center;\n    color: white;\n}\n\n.contact-form .btnContact {\n    width: 50%;\n    border: none;\n    border-radius: 25px;\n    padding: 1.5%;\n    background: #dc3545;\n    font-weight: 600;\n    color: #fff;\n    cursor: pointer;\n}\n\n.btnContactSubmit {\n    width: 50%;\n    padding: 1.5%;\n    color: #fff;\n    border: none;\n    cursor: pointer;\n}\n\n.icon_display img {\n    width: 50px;\n}\n\n#tri-produit {\n    margin-top: 50px;\n}\n\n.number_results {\n    padding-top: 15px;\n}\n\n#weekproduct {\n    width: 10rem;\n}\n\n.card-img-top {\n    width: 10rem;\n}\n\n.btn-filter {\n    border-color: grey;\n    border-style: solid;\n    border-width: 0.5px;\n    border-radius: 25px;\n}", ""]);
 
 // exports
 
@@ -47862,13 +47862,10 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("span"),
               _vm._v(" "),
-              _c("p", { staticClass: "mt-2 h5" }, [
+              _c("p", { staticClass: "mt-3 mb-3 h5" }, [
                 _vm._v("CHF "),
-                _c("b", [_vm._v("17.40")])
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "price-ht-font" }, [
-                _c("i", [
+                _c("b", [_vm._v("17.40  ")]),
+                _c("i", { staticClass: "price-ht-font" }, [
                   _vm._v("("),
                   _c("span", [_vm._v("13")]),
                   _vm._v(" CHF hors TVA)")
@@ -47888,9 +47885,54 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("br"),
             _vm._v(" "),
-            _c("div", { staticClass: "mt-1 mb-1" }, [
+            _c("div", { staticClass: "mt-2 mb-2" }, [
               _c("span", [
-                _c("label", [_vm._v("VARIANTES:")]),
+                _c("label", [_vm._v("TAILL :")]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-outline-secondary btn-sm disabled",
+                    attrs: {
+                      href: "#",
+                      role: "button",
+                      "aria-disabled": "true"
+                    }
+                  },
+                  [_vm._v("37.5 cl")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-outline-secondary btn-sm active",
+                    attrs: {
+                      href: "#",
+                      role: "button",
+                      "aria-disabled": "true"
+                    }
+                  },
+                  [_vm._v("50 cl")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-outline-secondary btn-sm disabled",
+                    attrs: {
+                      href: "#",
+                      role: "button",
+                      "aria-disabled": "true"
+                    }
+                  },
+                  [_vm._v("75 cl")]
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "mt-2 mb-2" }, [
+              _c("span", [
+                _c("label", [_vm._v("VARIANTES :")]),
                 _vm._v(" "),
                 _c(
                   "a",
@@ -47933,218 +47975,215 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("div", { staticClass: "mt-1 mb-1" }, [
-              _c("label", [_vm._v("QUANTITÉS:")]),
-              _vm._v(" "),
-              _c("div", {}, [
-                _c("div", { staticClass: "input-group" }, [
-                  _c("span", { staticClass: "input-group-btn" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "quantity-left-minus btn btn-outline-secondary btn-sm",
-                        attrs: {
-                          type: "button",
-                          "data-type": "minus",
-                          "data-field": ""
-                        }
-                      },
-                      [
-                        _c(
-                          "span",
-                          { staticClass: "glyphicon glyphicon-minus" },
-                          [_vm._v("-")]
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass: "form-control input-number form-control-sm",
-                    attrs: {
-                      type: "text",
-                      id: "quantity",
-                      name: "quantity",
-                      value: "1",
-                      min: "1",
-                      max: "20"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "input-group-btn" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "quantity-right-plus btn btn-outline-secondary btn-sm",
-                        attrs: {
-                          type: "button",
-                          "data-type": "plus",
-                          "data-field": ""
-                        }
-                      },
-                      [
-                        _c(
-                          "span",
-                          { staticClass: "glyphicon glyphicon-plus" },
-                          [_vm._v("+")]
-                        )
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
+            _c("div", { staticClass: "mt-2 mb-2" }, [
+              _c("div", { staticClass: "input-group" }, [
+                _c("label", { staticClass: "mr-4 my-auto" }, [
+                  _vm._v("QUANTITÉS : ")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "input-group-btn" }, [
                   _c(
                     "button",
                     {
-                      staticClass: "btn btn-outline-danger btn-sm ml-4 mr-4",
-                      attrs: { type: "button" }
+                      staticClass:
+                        "quantity-left-minus btn btn-outline-secondary btn-sm",
+                      attrs: {
+                        type: "button",
+                        "data-type": "minus",
+                        "data-field": ""
+                      }
                     },
-                    [_vm._v("Ajouter au panier")]
+                    [
+                      _c("span", { staticClass: "glyphicon glyphicon-minus" }, [
+                        _vm._v("-")
+                      ])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass:
+                    "form-control input-number form-control-sm quantity-bar",
+                  attrs: {
+                    type: "text",
+                    id: "quantity",
+                    name: "quantity",
+                    value: "1",
+                    min: "1",
+                    max: "20"
+                  }
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "input-group-btn" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "quantity-right-plus btn btn-outline-secondary btn-sm",
+                      attrs: {
+                        type: "button",
+                        "data-type": "plus",
+                        "data-field": ""
+                      }
+                    },
+                    [
+                      _c("span", { staticClass: "glyphicon glyphicon-plus" }, [
+                        _vm._v("+")
+                      ])
+                    ]
                   )
                 ])
               ])
-            ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-outline-danger btn-sm ml-4 mr-4",
+                attrs: { type: "button" }
+              },
+              [_vm._v("Ajouter au panier")]
+            )
           ])
         ])
       ]),
       _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "nav flex-column nav-pills",
-          attrs: {
-            id: "v-pills-tab",
-            role: "tablist",
-            "aria-orientation": "vertical"
-          }
-        },
-        [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-4" }, [
           _c(
-            "a",
+            "div",
             {
-              staticClass: "nav-link active",
+              staticClass: "nav flex-column nav-pills text-info",
               attrs: {
-                id: "v-pills-home-tab",
-                "data-toggle": "pill",
-                href: "#v-pills-home",
-                role: "tab",
-                "aria-controls": "v-pills-home",
-                "aria-selected": "true"
+                id: "v-pills-tab",
+                role: "tablist",
+                "aria-orientation": "vertical"
               }
             },
-            [_vm._v("Home")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nav-link",
-              attrs: {
-                id: "v-pills-profile-tab",
-                "data-toggle": "pill",
-                href: "#v-pills-profile",
-                role: "tab",
-                "aria-controls": "v-pills-profile",
-                "aria-selected": "false"
-              }
-            },
-            [_vm._v("Profile")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nav-link",
-              attrs: {
-                id: "v-pills-messages-tab",
-                "data-toggle": "pill",
-                href: "#v-pills-messages",
-                role: "tab",
-                "aria-controls": "v-pills-messages",
-                "aria-selected": "false"
-              }
-            },
-            [_vm._v("Messages")]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass: "nav-link",
-              attrs: {
-                id: "v-pills-settings-tab",
-                "data-toggle": "pill",
-                href: "#v-pills-settings",
-                role: "tab",
-                "aria-controls": "v-pills-settings",
-                "aria-selected": "false"
-              }
-            },
-            [_vm._v("Settings")]
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "nav-link text-right pills active",
+                  attrs: {
+                    id: "v-pills-home-tab",
+                    "data-toggle": "pill",
+                    href: "#v-pills-home",
+                    role: "tab",
+                    "aria-controls": "v-pills-home",
+                    "aria-selected": "true"
+                  }
+                },
+                [_vm._v("Description")]
+              ),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticClass: "nav-link text-right pills",
+                  attrs: {
+                    id: "v-pills-profile-tab",
+                    "data-toggle": "pill",
+                    href: "#v-pills-profile",
+                    role: "tab",
+                    "aria-controls": "v-pills-profile",
+                    "aria-selected": "false"
+                  }
+                },
+                [_vm._v("Informations")]
+              )
+            ]
           )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "tab-content", attrs: { id: "v-pills-tabContent" } },
-        [
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-8" }, [
           _c(
             "div",
-            {
-              staticClass: "tab-pane fade show active",
-              attrs: {
-                id: "v-pills-home",
-                role: "tabpanel",
-                "aria-labelledby": "v-pills-home-tab"
-              }
-            },
-            [_vm._v("Home")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "tab-pane fade",
-              attrs: {
-                id: "v-pills-profile",
-                role: "tabpanel",
-                "aria-labelledby": "v-pills-profile-tab"
-              }
-            },
-            [_vm._v("Profile")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "tab-pane fade",
-              attrs: {
-                id: "v-pills-messages",
-                role: "tabpanel",
-                "aria-labelledby": "v-pills-messages-tab"
-              }
-            },
-            [_vm._v("Message")]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "tab-pane fade",
-              attrs: {
-                id: "v-pills-settings",
-                role: "tabpanel",
-                "aria-labelledby": "v-pills-settings-tab"
-              }
-            },
-            [_vm._v("Setting")]
+            { staticClass: "tab-content", attrs: { id: "v-pills-tabContent" } },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "tab-pane fade show active text-justify",
+                  attrs: {
+                    id: "v-pills-home",
+                    role: "tabpanel",
+                    "aria-labelledby": "v-pills-home-tab"
+                  }
+                },
+                [
+                  _c("p", [
+                    _vm._v(
+                      "Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat."
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "tab-pane fade",
+                  attrs: {
+                    id: "v-pills-profile",
+                    role: "tabpanel",
+                    "aria-labelledby": "v-pills-profile-tab"
+                  }
+                },
+                [
+                  _c("table", { staticClass: "p table" }, [
+                    _c("tr", [
+                      _c("td", [_vm._v("Teneur en alcool")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("13.5°")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Cotation")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("WeinWisser : 18/20")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Classement")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Cru Bourgeois supérieur")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Apogée")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("2022 - 2038")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Producteur")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Château Cambon la Pelouse")])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Cépage(s)")]),
+                      _vm._v(" "),
+                      _c("td", [
+                        _vm._v(
+                          "53% Merlot, 32.7% Cabernet Sauvignon, 12.3% Cabernet Franc, 2% Petit Verdot"
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("tr", [
+                      _c("td", [_vm._v("Type")]),
+                      _vm._v(" "),
+                      _c("td", [_vm._v("Vin rouge")])
+                    ])
+                  ])
+                ]
+              )
+            ]
           )
-        ]
-      )
+        ])
+      ])
     ])
   }
 ]
