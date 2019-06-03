@@ -4,30 +4,55 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
-
 window.Vue = require('vue');
 import Vue from 'vue';
+import Router from './routes.js'
 import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-import '../style/style.css'
+import 'bootstrap/dist/js/bootstrap.js';
+import '../style/style.css';
+import './counter.js';
+
+// import Counter from './countUp/dist/countUp'
+
+window.$ = require('jquery')
+window.JQuery = require('jquery')
+
+
+
 Vue.use(BootstrapVue);
 
 
-Vue.component('nav-bar', require('./components/NavBar.vue').default);
-Vue.component('footer-bar', require('./components/Footer.vue').default);
 
+Vue.component('nav-bar', require('./components/NavBar.vue').default);
+Vue.component('week-selection', require('./components/SelectionSemaine.vue').default);
+Vue.component('footer-bar', require('./components/Footer.vue').default);
+Vue.component('week-selection-card', require('./components/CarteSelectionSemaine.vue').default);
+Vue.component('week-selection-producer', require('./components/ProducteurSelectionSemaine.vue').default);
+Vue.component('history-bar', require('./components/HistoryBar.vue').default);
+
+//Filtre produits et formulaire de contact 
+Vue.component('product-filter', require('./components/ProductFilter.vue').default);
+Vue.component('contact-form', require('./components/ContactForm.vue').default);
+
+//Page produits
+Vue.component('nav-product-bar', require('./components/NavProductBar.vue').default);
+Vue.component('product-page', require('./components/ProductPage.vue').default);
+Vue.component('carte-produit',require('./components/CarteProduit.vue').default);
+
+//CGV 
+Vue.component('cgv-texte',require('./components/CGV.vue').default);
+
+//Panier 
+Vue.component('panier-produit',require('./components/Panier.vue').default);
 
 const app = new Vue({
     el: '#app',
-    logo: {
-        url: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
-      },
+    router: Router,
 });
 
 
 
 window.$ = require('jquery')
 window.JQuery = require('jquery')
-

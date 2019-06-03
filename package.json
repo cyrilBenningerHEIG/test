@@ -27,6 +27,13 @@
     "dependencies": {
         "backbone": "^1.4.0",
         "bootstrap-vue": "^2.0.0-rc.21",
-        "handlebars": "^4.1.2"
+        "counterup2": "^1.0.4",
+        "countup.js": "^2.0.4",
+        "handlebars": "^4.1.2",
+        "vform": "^1.0.0",
+        "vue-countup": "^0.1.0",
+        "vue-countup-v2": "^3.0.1",
+        "vue-router": "^3.0.6",
+        "waypoints": "^4.0.1"
     }
 }

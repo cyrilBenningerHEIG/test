@@ -15,10 +15,11 @@
         <div id="app">
             <div class="container">
                 <nav-bar></nav-bar>
+                <cgv-texte></cgv-texte>
                 <footer-bar></footer-bar>
+
             </div>
         </div>
-    <script src="js/app.js"></script>
+            <script src="js/app.js"></script>
     </body>
 </html>
-

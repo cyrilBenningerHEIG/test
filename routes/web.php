@@ -11,6 +11,51 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/', 'IndexController@index');
+
+Route::get('/pageProduit', function () {
+    return view('productPage');
 });
+
+Route::get('/produits', function () {
+    return view('produits');
+});
+
+Route::get('/promos', function () {
+    return view('promos');
+});
+
+Route::get('/primeurs', function () {
+    return view('primeurs');
+});
+
+Route::get('/nouveautes', function () {
+    return view('nouveautes');
+});
+
+Route::get('/compte', function () {
+    return view('compte');
+});
+
+Route::get('/panier', function () {
+    return view('panier');
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/cgv', function () {
+    return view('cgv');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/histoire', function () {
+    return view('histoire');
+});
+
