@@ -18,9 +18,7 @@ Route::get('/pageProduit', function () {
     return view('productPage');
 });
 
-Route::get('/produits', function () {
-    return view('produits');
-});
+Route::get('/produits', 'CatalogueController@index');
 
 Route::get('/promos', function () {
     return view('promos');
