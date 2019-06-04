@@ -18,22 +18,11 @@ class productPageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    function index ()
     {
-        $vins = Vin::all();
-        $regions = Regn::all();
-        $produs = Produ::all();
-        $types = Type::all();
-        $pays = Pays::all();
-        $frmts = Frmt::all();
-
+        $vins = Vin::with(['produ', 'appel', 'frmt', 'prix', 'condi'])->first();
         return view('productPage', [
-            'vins' => $vins,
-            'regions' => $regions,
-            'produs' => $produs,
-            'types' => $types,
-            'pays' => $pays,
-            'frmts' => $frmts,
-        ]);
+            'vins'=> $vins,
+            ]);
     }
 }

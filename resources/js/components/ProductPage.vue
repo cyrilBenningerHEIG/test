@@ -15,13 +15,13 @@
         </div>
         <div class="col mt-5">
           <div>
-            <h3>{{vin.nom}} - {{vin.millesime}}</h3>
+            <h3>{{vins.nom}} - {{vins.millesime}}</h3>
             <span> </span>
-            <h5 class="mt-3 mb-3 price-font">CHF <b>17.40  </b><i class="price-ht-font">(<span>13</span> CHF hors TVA)</i></h5>
+            <h5 class="mt-3 mb-3 price-font">CHF <b>({{vins.prix.prixht}}*1,07)  </b><i class="price-ht-font">(<span>{{vins.prix.prixht}} </span> CHF hors TVA)</i></h5>
        
             <span> </span>
             <span> </span>
-            <p class="font-weight-light mt-2 mb-2 article-font"> Numéro d'article : HFIWOMSH</p>
+            <p class="font-weight-light mt-2 mb-2 article-font"> Numéro d'article : {{vins.id}}</p>
           </div>
               <br>
           
@@ -73,29 +73,29 @@
   </div>
   <div class="col-8">
     <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active text-justify" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><p>Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat.</p></div>
+      <div class="tab-pane fade show active text-justify" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"><p>{{vins.descriptionText}}</p></div>
       <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
         
         <table class="p table">
           <tr>
             <td>Teneur en alcool</td>
-            <td>13.5°</td>
+            <td>{{vins.alcool}}</td>
           </tr>
           <tr>
             <td>Cotation</td>
-            <td>WeinWisser : 18/20</td>
+            <td>{{vins.cotation}}</td>
           </tr>
           <tr>
             <td>Classement</td>
-            <td>Cru Bourgeois supérieur</td>
+            <td>{{vins.classement}}</td>
           </tr>
           <tr>
             <td>Apogée</td>
-            <td>2022 - 2038</td>
+            <td>{{vins.apogee}}</td>
           </tr>
           <tr>
             <td>Producteur</td>
-            <td>Château Cambon la Pelouse</td>
+            <td>{{vins.produ.nom}}</td>
           </tr>
           <tr>
             <td>Cépage(s)</td>
