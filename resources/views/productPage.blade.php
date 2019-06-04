@@ -23,8 +23,6 @@
             <selection-card class="mt-5" ></selection-card>
 
 
-
-
             <footer-bar></footer-bar>
             </div>
         </div>

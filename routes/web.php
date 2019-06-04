@@ -16,9 +16,7 @@ Route::get('/', 'IndexController@index');
 
 Route::get('/pageProduit', 'productPageController@index');
 
-Route::get('/produits', function () {
-    return view('produits');
-});
+Route::get('/produits', 'CatalogueController@index');
 
 Route::get('/promos', function () {
     return view('promos');
