@@ -28,7 +28,7 @@ window.JQuery = require('jquery')
 Vue.use(BootstrapVue);
 
 
-
+//Home
 Vue.component('nav-bar-login', require('./components/NavBarLogin.vue').default);
 Vue.component('nav-bar-logout', require('./components/NavBarLogout.vue').default);
 Vue.component('menu-home', require('./components/Menu.vue').default);
@@ -38,7 +38,17 @@ Vue.component('week-selection-card', require('./components/CarteSelectionSemaine
 Vue.component('week-selection-producer', require('./components/ProducteurSelectionSemaine.vue').default);
 Vue.component('history-bar', require('./components/HistoryBar.vue').default);
 
-Vue.component('nav-bar-nouveaute', require('./components/NavBarNouveaute.vue').default);
+//Produits Nouveautés
+Vue.component('menu-nouveaute', require('./components/MenuNouveaute.vue').default);
+
+//Produits Primeurs
+Vue.component('menu-primeur', require('./components/MenuPrimeur.vue').default);
+
+//Produits Promos
+Vue.component('menu-promo', require('./components/MenuPromo.vue').default);
+
+//Produits Catalogue
+Vue.component('menu-produit', require('./components/MenuProduit.vue').default);
 
 //Filtre produits et formulaire de contact 
 Vue.component('product-filter', require('./components/ProductFilter.vue').default);
