@@ -68,6 +68,7 @@
     <div class="nav flex-column nav-pills text-info" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <a class="nav-link text-right pills active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Description</a>
       <a class="nav-link text-right pills" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Informations</a>
+      <a class="nav-link text-right pills" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Régions</a>
     </div>
   </div>
   <div class="col-8">
@@ -104,8 +105,17 @@
             <td>Type</td>
             <td>Vin rouge</td>
           </tr>
+          <tr>
+            <td>Pays</td>
+            <td>France</td>
+          </tr>
+          <tr>
+            <td>Région</td>
+            <td>Bordeaux</td>
+          </tr>
         </table>
         </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"><div id="mapid"></div></div>
     </div>
   </div>
 </div>

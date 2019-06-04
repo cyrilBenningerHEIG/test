@@ -197,6 +197,7 @@
     
     .pills {
         color: #f2ebda;
+        font-size: 16px;
     }
     
     .btn-basket {
@@ -216,6 +217,10 @@
         background-color: #a62b35;
         border: 5px solid #a62b35;
         color: white;
+    }
+    
+    #mapid {
+        height: 400px;
     }
     /* CONTACT */
     
