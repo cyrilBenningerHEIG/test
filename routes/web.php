@@ -14,9 +14,7 @@
 
 Route::get('/', 'IndexController@index');
 
-Route::get('/pageProduit', function () {
-    return view('productPage');
-});
+Route::get('/pageProduit', 'productPageController@index');
 
 Route::get('/produits', function () {
     return view('produits');

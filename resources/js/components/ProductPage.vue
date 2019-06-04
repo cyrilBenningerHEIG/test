@@ -15,7 +15,7 @@
         </div>
         <div class="col mt-5">
           <div>
-            <h3>Château Cambon la Pelouse - 2015</h3>
+            <h3>{{vin.nom}} - {{vin.millesime}}</h3>
             <span> </span>
             <h5 class="mt-3 mb-3 price-font">CHF <b>17.40  </b><i class="price-ht-font">(<span>13</span> CHF hors TVA)</i></h5>
        
@@ -26,7 +26,7 @@
               <br>
           
           <div class="mt-4 mb-4">
-            <label>TAILL :</label> 
+            <label>TAILLE :</label> 
             <div>
               <a href="#" class="btn btn-outline-secondary btn-sm disabled" role="button" aria-disabled="true">37.5 cl</a>
               <a href="#" class="btn btn-outline-secondary btn-sm active" role="button" aria-disabled="true">50 cl</a>
@@ -121,3 +121,14 @@
 </div>
     </section>
 </template>
+<script>
+export default {
+  props: ['vins'],
+
+    data(){
+        return{
+          vin:'',
+        }
+     },
+}
+</script>

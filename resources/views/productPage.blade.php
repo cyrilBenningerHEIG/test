@@ -18,7 +18,7 @@
         <div id="app">
             <div class="container">
             <nav-product-bar></nav-product-bar>
-            <product-page></product-page>
+            <product-page :vins='{{ $vins }}' :produs='{{ $produs }}' :regions='{{ $regions }}' :pays='{{ $pays }}' :frmts='{{ $frmts }}'></product-page>
             <br>
             <selection-card class="mt-5" ></selection-card>
 
